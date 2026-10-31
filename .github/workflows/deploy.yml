@@ -1,0 +1,36 @@
+name: Construir y publicar en GitHub Pages
+
+on:
+  # Cada vez que se actualiza la rama principal
+  push:
+    branches: [main]
+  # En los pull requests solo se construye, para detectar errores antes de publicar
+  pull_request:
+  # Permite lanzarlo a mano desde la pestaña Actions
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v7
+      - name: Instalar, construir y preparar la web
+        uses: withastro/action@v6
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
