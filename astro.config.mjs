@@ -1,16 +1,23 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://alabcar.github.io',
 	base: '/hola-universo',
+	markdown: {
+		remarkPlugins: [remarkMath],
+		rehypePlugins: [rehypeKatex],
+	},
 	integrations: [
 		starlight({
 			title: 'Hola, universo',
 			description:
 				'Plan de estudio como afición en astronomía, física y matemáticas: cada semana empieza con una pregunta del cielo.',
+			customCss: ['katex/dist/katex.min.css'],
 			defaultLocale: 'root',
 			locales: {
 				root: { label: 'Castellano', lang: 'es' },

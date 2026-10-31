@@ -55,7 +55,7 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 |---|---|
 | Plan y temario (este archivo y `TEMARIO.md`) | aprobado |
 | Esqueleto de la web (Starlight + despliegue) | publicado |
-| Fase 1 · Principios básicos de astronomía | en curso: semana 1 escrita (muestra para revisar); semanas 2-12 pendientes |
+| Fase 1 · Principios básicos de astronomía | escrita (semanas 1 a 12), pendiente de revisión |
 | Fase 2 · Órbitas | pendiente |
 | Fase 3 · La luz | pendiente |
 | Fase 4 · El universo grande | pendiente |
