@@ -20,8 +20,20 @@ jobs:
     steps:
       - name: Descargar el repositorio
         uses: actions/checkout@v7
-      - name: Instalar, construir y preparar la web
-        uses: withastro/action@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: DIAGNOSTICO instalar y construir
+        run: |
+          set +e
+          npm install > /tmp/install.log 2>&1
+          ic=$?
+          npm run build > /tmp/build.log 2>&1
+          bc=$?
+          enc() { sed 's/%/%25/g' | awk '{printf "%s%%0A",$0}'; }
+          echo "::error title=install-exit-$ic::$(tail -n 15 /tmp/install.log | enc)"
+          echo "::error title=build-exit-$bc::$(tail -n 40 /tmp/build.log | enc)"
+          exit $((ic+bc))
 
   deploy:
     if: github.event_name != 'pull_request'
