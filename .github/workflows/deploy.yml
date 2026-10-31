@@ -1,0 +1,46 @@
+name: Construir y publicar en GitHub Pages
+
+on:
+  # Cada vez que se actualiza la rama principal
+  push:
+    branches: [main]
+  # En los pull requests solo se construye, para detectar errores antes de publicar
+  pull_request:
+  # Permite lanzarlo a mano desde la pestaña Actions
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v7
+      - name: Preparar Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+      - name: Instalar dependencias
+        run: npm install
+      - name: Construir la web
+        run: npm run build
+      - name: Preparar el artefacto para GitHub Pages
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
