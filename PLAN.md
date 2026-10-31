@@ -38,7 +38,7 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
    - Física
    - Astronomía u observación
    - Proyecto (Python)
-3. **Qué te llevas**: la respuesta a la pregunta en pocas líneas y las ideas que la sostienen.
+3. **Qué has aprendido**: la respuesta a la pregunta en pocas líneas y las ideas que la sostienen.
 4. **Recursos comentados**.
 5. **Imágenes y créditos**.
 
