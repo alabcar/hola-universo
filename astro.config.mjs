@@ -22,19 +22,19 @@ export default defineConfig({
 				},
 				{
 					label: 'Fase 1 · Principios básicos de astronomía',
-					autogenerate: { directory: 'fase-1' },
+					items: [{ autogenerate: { directory: 'fase-1' } }],
 				},
 				{
 					label: 'Fase 2 · Órbitas',
-					autogenerate: { directory: 'fase-2' },
+					items: [{ autogenerate: { directory: 'fase-2' } }],
 				},
 				{
 					label: 'Fase 3 · La luz',
-					autogenerate: { directory: 'fase-3' },
+					items: [{ autogenerate: { directory: 'fase-3' } }],
 				},
 				{
 					label: 'Fase 4 · El universo grande',
-					autogenerate: { directory: 'fase-4' },
+					items: [{ autogenerate: { directory: 'fase-4' } }],
 				},
 				{ label: 'Recursos', slug: 'recursos' },
 				{ label: 'Créditos y licencias', slug: 'creditos' },
