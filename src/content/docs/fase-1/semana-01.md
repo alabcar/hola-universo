@@ -97,7 +97,15 @@ Tres hechos describen casi todo lo que ocurre esta semana. Pásalos a un papel c
 
 **Consecuencia para la pregunta.** Medido desde la Tierra, el Sol se mueve a lo largo del año por una línea del cielo que se inclina 23,44° respecto al ecuador celeste. Su **declinación** (el ángulo al norte o al sur de ese ecuador) oscila entre +23,44° en el solsticio de junio y −23,44° en el de diciembre, y pasa por 0° en los dos equinoccios. El punto del horizonte por donde sale depende de esa declinación: de ahí su desplazamiento.
 
+![Vista desde arriba del horizonte a 40° de latitud norte, con los tres puntos por donde sale el Sol: 58,7° en el solsticio de junio, 90° en los equinoccios y 121,3° en el solsticio de diciembre.](../../../assets/semana-01-salida-sol.svg)
+
+*Diagrama de elaboración propia, calculado con el modelo del cuaderno de esta semana. Entre el solsticio de junio y el de diciembre el punto de salida recorre unos 63° del horizonte (de 58,7° a 121,3°).*
+
 **¿Y la distancia al Sol?** Es la explicación intuitiva y es falsa. La Tierra está más cerca del Sol (perihelio, 147,1 millones de km) a principios de enero, y más lejos (afelio, 152,1 millones de km) a principios de julio. Si la distancia fuera la causa de las estaciones, el hemisferio norte tendría su verano en enero. Además, ambos hemisferios tienen estaciones opuestas al mismo tiempo, algo imposible si la causa fuera común. La diferencia de distancia es del 3,4 %, y como la energía recibida varía con el inverso del cuadrado de la distancia, cambia en torno a un 7 % entre los extremos: es real, pero pequeña frente al efecto de la inclinación.
+
+![Órbita de la Tierra vista desde arriba, con la distancia al Sol en el afelio y en el perihelio.](https://spaceplace.nasa.gov/seasons/en/aphelion-perihelion-lrg.en.png)
+
+*Imagen: NASA Space Place (JPL-Caltech), en inglés. La órbita está exagerada: en realidad es casi circular. La página de origen no indica un crédito individual para esta imagen, y remite a las directrices de uso de medios de la NASA y a la política de imágenes del JPL.*
 
 **Qué hacer**
 
@@ -133,7 +141,7 @@ Trabajarás en un cuaderno de Python que se abre en el navegador con Google Cola
 
 El modelo del cuaderno usa fórmulas de trigonometría que aún no has estudiado. Las tratas como una caja negra y compruebas que funciona. Más adelante, con trigonometría y coordenadas celestes, podrás deducirlas.
 
-## Qué te llevas
+## Qué has aprendido
 
 - **La respuesta.** El Sol sale exactamente por el este solo en los equinoccios. Entre marzo y septiembre sale al norte del este (en el hemisferio norte) y el resto del año, al sur. La desviación máxima, en los solsticios, depende de la latitud: en torno a 31° a 40° de latitud norte, y 23,4° en el ecuador.
 - **La causa.** El eje de la Tierra está inclinado 23,44° y apunta siempre a la misma dirección mientras la Tierra completa su órbita en unos 365,25 días. La declinación del Sol oscila así entre +23,44° y −23,44° a lo largo del año.
@@ -152,4 +160,5 @@ Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir
 
 ## Imágenes y créditos
 
-Esta semana no incluye imágenes de terceros. Los diagramas, cuando se añadan, serán de elaboración propia o de fuentes libres con su crédito.
+- Diagrama de la salida del Sol (sesión 3): elaboración propia, a partir del modelo del cuaderno.
+- Órbita de la Tierra con perihelio y afelio (sesión 3): NASA Space Place (JPL-Caltech), [spaceplace.nasa.gov/seasons](https://spaceplace.nasa.gov/seasons/en). **(Sin verificar)**: la imagen se carga desde el servidor de la NASA y su descripción procede del texto alternativo de la página de origen; está pendiente de comprobación visual.

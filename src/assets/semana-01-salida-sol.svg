@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 440" role="img" aria-labelledby="t d">
+<title id="t">Puntos del horizonte por donde sale el Sol a lo largo del año a 40° de latitud norte</title>
+<desc id="d">Vista desde arriba del horizonte. El Sol sale a 58,7° desde el norte en el solsticio de junio, a 90° (este) en los equinoccios y a 121,3° en el solsticio de diciembre.</desc>
+<rect x="1" y="1" width="658" height="438" rx="12" fill="#f7f8fb" stroke="#c9cfdd"/>
+<g font-family="system-ui, -apple-system, Segoe UI, Roboto, sans-serif" fill="#1c2233">
+<text x="24" y="34" font-size="18" font-weight="600">Por dónde sale el Sol a lo largo del año</text>
+<path d="M230,225 L349.6,152.3 A140,140 0 0 1 349.6,297.7 Z" fill="#f5c542" fill-opacity="0.18"/>
+<circle cx="230" cy="225" r="140" fill="none" stroke="#7b869f" stroke-width="1.5"/>
+<line x1="230" y1="85" x2="230" y2="365" stroke="#c0c6d4" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="90" y1="225" x2="370" y2="225" stroke="#c0c6d4" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="230" y1="225" x2="349.6" y2="152.3" stroke="#d9731a" stroke-width="2.5"/>
+<line x1="230" y1="225" x2="370.0" y2="225.0" stroke="#5b6b8c" stroke-width="2.5"/>
+<line x1="230" y1="225" x2="349.6" y2="297.7" stroke="#2a6fdb" stroke-width="2.5"/>
+<circle cx="349.6" cy="152.3" r="8" fill="#f5c542" stroke="#d9731a" stroke-width="2.5"/>
+<circle cx="370.0" cy="225.0" r="8" fill="#f5c542" stroke="#5b6b8c" stroke-width="2.5"/>
+<circle cx="349.6" cy="297.7" r="8" fill="#f5c542" stroke="#2a6fdb" stroke-width="2.5"/>
+<circle cx="230" cy="225" r="4" fill="#1c2233"/>
+<text x="230" y="73" font-size="16" font-weight="600" text-anchor="middle">N</text>
+<text x="230" y="389" font-size="16" font-weight="600" text-anchor="middle">S</text>
+<text x="76" y="230" font-size="16" font-weight="600" text-anchor="end">O</text>
+<text x="238" y="247" font-size="12" fill="#5d667c">tú</text>
+<g font-size="15">
+<text x="372" y="148" font-weight="600" fill="#b45a0f">Solsticio de junio</text>
+<text x="372" y="168" fill="#444c62">azimut 58,7° (NE)</text>
+<text x="392" y="221" font-weight="600" fill="#46526f">Equinoccios</text>
+<text x="392" y="241" fill="#444c62">azimut 90° (E)</text>
+<text x="372" y="294" font-weight="600" fill="#1f56ad">Solsticio de diciembre</text>
+<text x="372" y="314" fill="#444c62">azimut 121,3° (SE)</text>
+</g>
+<text x="24" y="404" font-size="13" fill="#5d667c">Latitud 40° N, vista desde arriba. Horizonte plano y sin refracción.</text>
+<text x="24" y="423" font-size="13" fill="#5d667c">El azimut se mide desde el norte hacia el este.</text>
+</g>
+</svg>
