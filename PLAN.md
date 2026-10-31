@@ -53,8 +53,8 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 
 | Hito | Estado |
 |---|---|
-| Plan y temario (este archivo y `TEMARIO.md`) | borrador, pendiente de aprobación |
-| Esqueleto de la web (Starlight + despliegue) | pendiente |
+| Plan y temario (este archivo y `TEMARIO.md`) | aprobado |
+| Esqueleto de la web (Starlight + despliegue) | construye correctamente en el pull request #1; pendiente de fusionar y de activar GitHub Pages |
 | Fase 1 · Principios básicos de astronomía | pendiente |
 | Fase 2 · Órbitas | pendiente |
 | Fase 3 · La luz | pendiente |
