@@ -27,7 +27,13 @@ jobs:
       - name: Instalar dependencias
         run: npm install
       - name: Construir la web
-        run: npm run build
+        run: |
+          if ! npm run build > build.log 2>&1; then
+            cat build.log
+            echo "::error title=Fallo al construir la web::$(tail -n 30 build.log | sed 's/%/%25/g' | awk '{printf "%s%%0A",$0}')"
+            exit 1
+          fi
+          cat build.log
       - name: Preparar el artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v5
         with:
