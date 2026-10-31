@@ -4,7 +4,7 @@ Borrador pendiente de aprobación. Cada fila es una semana: la pregunta y lo que
 
 ## Fase 1 · Principios básicos de astronomía
 
-| Sem | Pregunta del cielo | Mates | Física | Astronomía / observación | Proyecto Python |
+| Sem | Pregunta del cielo | Matemáticas | Física | Astronomía / observación | Proyecto Python |
 |---|---|---|---|---|---|
 | 1 | ¿Por qué el Sol no sale siempre por el mismo sitio? | Números, fracciones, potencias de 10 y escalas | Rotación, traslación e inclinación de la Tierra | Stellarium: configurar el lugar y seguir el Sol en los solsticios | Instalar Python y hacer la primera gráfica (horas de luz) |
 | 2 | ¿Cuánto mide el cielo? | Ángulos, grados y regla de tres | Tamaño aparente | Medir con el puño y los dedos; la Luna en el cielo | Calculadora de tamaño angular |
@@ -21,7 +21,7 @@ Borrador pendiente de aprobación. Cada fila es una semana: la pregunta y lo que
 
 ## Fase 2 · Órbitas
 
-| Sem | Pregunta del cielo | Mates | Física | Astronomía / observación | Proyecto Python |
+| Sem | Pregunta del cielo | Matemáticas | Física | Astronomía / observación | Proyecto Python |
 |---|---|---|---|---|---|
 | 13 | ¿Por qué algunos planetas parecen ir hacia atrás? | Trigonometría y movimiento circular | Velocidad angular | Seguir un planeta con Stellarium | Dos órbitas circulares vistas desde la Tierra |
 | 14 | ¿Por qué las órbitas son elipses? | Elipses: ecuación y excentricidad | 1.ª y 2.ª leyes de Kepler | Excentricidad de órbitas reales | Dibujar elipses |
@@ -38,7 +38,7 @@ Borrador pendiente de aprobación. Cada fila es una semana: la pregunta y lo que
 
 ## Fase 3 · La luz
 
-| Sem | Pregunta del cielo | Mates | Física | Astronomía / observación | Proyecto Python |
+| Sem | Pregunta del cielo | Matemáticas | Física | Astronomía / observación | Proyecto Python |
 |---|---|---|---|---|---|
 | 25 | ¿Cuánto tarda la luz en llegar? | Notación científica, órdenes de magnitud | Velocidad de la luz | Tiempo-luz a la Luna, el Sol y las estrellas | Calculadora de tiempo-luz |
 | 26 | ¿Por qué el cielo es azul y el Sol se pone rojo? | Exponenciales y logaritmos | Ondas y dispersión | Colores del atardecer | Gráfica de dispersión según la longitud de onda |
@@ -55,7 +55,7 @@ Borrador pendiente de aprobación. Cada fila es una semana: la pregunta y lo que
 
 ## Fase 4 · El universo grande
 
-| Sem | Pregunta del cielo | Mates | Física | Astronomía / observación | Proyecto Python |
+| Sem | Pregunta del cielo | Matemáticas | Física | Astronomía / observación | Proyecto Python |
 |---|---|---|---|---|---|
 | 37 | ¿Cómo medimos la distancia a las estrellas? | Trigonometría: paralaje | Paralaje y candelas estándar | Estrellas con paralaje grande | Calcular distancias con datos de Gaia |
 | 38 | ¿Qué es la Vía Láctea y dónde estoy yo? | Coordenadas galácticas | Estructura galáctica | La Vía Láctea en un cielo oscuro | Mapa en 3D de estrellas cercanas |

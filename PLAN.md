@@ -4,12 +4,12 @@ Este archivo es la memoria del proyecto. Cualquier sesión nueva debe leerlo ant
 
 ## Qué es
 
-Un plan de formación como aficionado en astronomía, física y matemáticas, publicado como web pública en GitHub Pages. El objetivo es aprender y disfrutar, no sacar ningún título. La persona parte de una ingeniería informática; las matemáticas y la física las tiene olvidadas desde hace más de 20 años, así que las mates empiezan desde cero.
+Un plan de formación como aficionado en astronomía, física y matemáticas, publicado como web pública en GitHub Pages. El objetivo es aprender y disfrutar, no sacar ningún título. La persona parte de una ingeniería informática; las matemáticas y la física las tiene olvidadas desde hace más de 20 años, así que las matemáticas empiezan desde cero.
 
 ## Decisiones tomadas
 
 - **Método:** cada semana empieza con una pregunta del cielo, y se estudia solo la matemática y la física necesarias para responderla.
-- **Ritmo:** 4-5 sesiones por semana de 30-45 min: 2 de mates, 1 de física, 1 de astronomía u observación, 1 de proyecto con Python en el ordenador.
+- **Ritmo:** 4-5 sesiones por semana de 30-45 min: 2 de matemáticas, 1 de física, 1 de astronomía u observación, 1 de proyecto con Python en el ordenador.
 - **Estructura:** 4 fases de unos 3 meses (12 semanas cada una), 48 semanas en total. Detalle en `TEMARIO.md`.
   1. Principios básicos de astronomía
   2. Órbitas
@@ -27,14 +27,14 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 2. **Material ajeno:** no se copia, se enlaza. Nada de reproducir textos, vídeos o ejercicios de otras personas.
 3. **Imágenes:** solo de NASA/ESA u otras fuentes libres, con la fuente y el enlace citados en la propia página. Se comprueba la licencia de cada imagen; las condiciones de ESA pueden variar de una imagen a otra.
 4. **Datos y cifras:** se verifican con fuente primaria. Si una cifra no se ha podido comprobar, se dice.
-5. **Tono:** cercano, claro, sin condescendencia. Se explica la intuición antes de la fórmula.
+5. **Tono:** agradable pero riguroso. Sin paternalismo ni ingenuidad: se trata a la persona lectora como a un adulto capaz. Se explica la intuición y también la formulación correcta, sin esconder la dificultad ni simplificar hasta decir algo falso. Se escribe siempre "matemáticas", nunca "mates".
 
 ## Plantilla de cada semana
 
 1. **La pregunta del cielo**: un párrafo que la plantea y explica por qué merece la pena.
 2. **Las sesiones** (cada una dice qué hacer en 30-45 min y qué recurso usar):
-   - Mates 1
-   - Mates 2
+   - Matemáticas 1
+   - Matemáticas 2
    - Física
    - Astronomía u observación
    - Proyecto (Python)
