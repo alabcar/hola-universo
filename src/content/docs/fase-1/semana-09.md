@@ -1,6 +1,6 @@
 ---
 title: "Semana 9 · ¿Qué hace falta para cambiar un movimiento?"
-description: "Fase 1 · Principios básicos de astronomía. Funciones cuadráticas, vectores y las tres leyes de Newton."
+description: "Fase 1 · Principios básicos de astronomía. Funciones cuadráticas y la fórmula para resolverlas, vectores y las tres leyes de Newton."
 sidebar:
   order: 9
   label: "9. ¿Qué hace falta para cambiar un movimiento?"
@@ -8,19 +8,45 @@ sidebar:
 
 ## La pregunta del cielo
 
-Durante casi dos mil años se creyó que mantener un movimiento exigía un esfuerzo continuo: un carro se para si dejas de empujarlo. Pero los planetas llevan miles de millones de años moviéndose sin que nada los empuje. Newton resolvió la aparente contradicción con una idea que parece simple y no lo es: **no hace falta una fuerza para mantener un movimiento, hace falta una fuerza para cambiarlo.** El carro se para porque algo lo frena (el rozamiento), no porque se le acabe el impulso.
+Durante casi dos mil años se creyó que mantener un movimiento exigía un esfuerzo continuo: un carro se para si dejas de empujarlo. Era la física de Aristóteles, y encajaba con la experiencia diaria. Pero los planetas llevan miles de millones de años moviéndose sin que nada los empuje. Galileo, a principios del siglo XVII, empezó a sospechar que el sentido común se equivocaba, y Newton resolvió la contradicción en 1687, en sus *Principios matemáticos de la filosofía natural*, con una idea que parece simple y no lo es: **no hace falta una fuerza para mantener un movimiento, hace falta una fuerza para cambiarlo.** El carro se para porque algo lo frena (el rozamiento), no porque se le acabe el impulso.
 
 Esta semana aprendes las tres leyes de Newton, las matemáticas que necesitas para usarlas (funciones cuadráticas y vectores) y las pruebas en una simulación de caída y de lanzamiento. Al final comprobarás un cálculo clásico que ata la caída de una piedra a la órbita de la Luna.
 
 ## Las cinco sesiones
 
-### Sesión 1 · Matemáticas: funciones cuadráticas (30-40 min)
+### Sesión 1 · Matemáticas: funciones cuadráticas (40-45 min)
 
-Una **función cuadrática** tiene la forma $y = ax^2 + bx + c$ y su gráfica es una parábola. Aparece siempre que algo se acelera de forma constante: la distancia recorrida en una caída libre es $y = \tfrac{1}{2} g t^2$. Para resolver $ax^2 + bx + c = 0$ se usa
+**Qué es.** Una **función cuadrática** es una función en la que la variable aparece elevada al cuadrado:
+
+$$y = ax^2 + bx + c,$$
+
+con $a$ distinto de cero (si $a$ fuera cero, sería la función lineal de la semana 4). Su gráfica es una curva llamada **parábola**: con forma de U si $a$ es positivo, y de U invertida si es negativo. El nombre lo explicaremos en la semana 14, cuando aparezca junto a la elipse y la hipérbola.
+
+**Por qué importa aquí.** Aparece siempre que algo se acelera de forma constante. En la semana 8 viste que, con aceleración constante, la posición es $x = x_0 + v_0 t + \tfrac{1}{2} a t^2$: una función cuadrática del tiempo. La distancia recorrida en una caída libre desde el reposo es $y = \tfrac{1}{2} g t^2$, donde $g \approx 9{,}81$ m/s² es la aceleración de la gravedad. Y la trayectoria de una piedra lanzada es una parábola.
+
+**El vértice.** La parábola tiene un punto más bajo (si $a > 0$) o más alto (si $a < 0$), el **vértice**, donde deja de bajar y empieza a subir, o al revés. Está en
+
+$$x = -\frac{b}{2a}.$$
+
+En un lanzamiento hacia arriba, el vértice es el punto más alto que alcanza la piedra.
+
+**Resolver la ecuación cuadrática.** Muchas preguntas físicas acaban en encontrar los valores de $x$ que hacen $ax^2 + bx + c = 0$, por ejemplo, cuándo llega al suelo una piedra. Gráficamente, son los puntos donde la parábola corta el eje horizontal. La solución es la **fórmula general**:
 
 $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.$$
 
-Puede tener dos soluciones, una o ninguna según el signo de $b^2 - 4ac$. Y el vértice de la parábola, su valor máximo o mínimo, está en $x = -b/(2a)$.
+El signo $\pm$ significa que hay dos soluciones posibles, una con $+$ y otra con $-$.
+
+**De dónde sale.** No hace falta memorizarla sin entenderla. Se obtiene **completando el cuadrado**, usando que $(x + k)^2 = x^2 + 2kx + k^2$ (semana 7). Divide todo entre $a$ y pasa $c/a$ al otro lado: $x^2 + \tfrac{b}{a}x = -\tfrac{c}{a}$. El lado izquierdo es el principio de $(x + \tfrac{b}{2a})^2$; le falta el término $(\tfrac{b}{2a})^2$. Súmalo a los dos lados:
+
+$$\left(x + \frac{b}{2a}\right)^2 = \frac{b^2}{4a^2} - \frac{c}{a} = \frac{b^2 - 4ac}{4a^2}.$$
+
+Ahora haz la raíz cuadrada a los dos lados (con los dos signos posibles, porque tanto $3^2$ como $(-3)^2$ dan 9) y despeja $x$. Sale la fórmula.
+
+**El discriminante.** La cantidad bajo la raíz, $b^2 - 4ac$, se llama **discriminante** y decide cuántas soluciones hay. Si es positiva, hay dos (la parábola corta el eje dos veces); si es cero, una (lo toca en el vértice); si es negativa, ninguna real, porque no existe la raíz cuadrada de un número negativo entre los números reales (la parábola no llega al eje).
+
+:::note[De dónde viene la palabra]
+**Cuadrática** viene de *quadratus*, «cuadrado», porque la variable está elevada al cuadrado. **Vértice** viene del latín *vertex*, «remolino, coronilla, cumbre», de *vertere*, «girar»: el punto donde la curva da la vuelta. **Discriminante** viene de *discriminare*, «separar, distinguir»: el número que distingue entre los tres casos.
+:::
 
 **Ejercicios**
 
@@ -39,13 +65,19 @@ Puede tener dos soluciones, una o ninguna según el signo de $b^2 - 4ac$. Y el v
 
 </details>
 
-### Sesión 2 · Matemáticas: vectores (30-40 min)
+### Sesión 2 · Matemáticas: vectores (35-40 min)
 
-Una **magnitud escalar** se describe con un número (la masa, el tiempo). Una **magnitud vectorial** necesita un módulo y una dirección: la velocidad, la fuerza, la aceleración. En el plano, un vector se escribe con sus dos **componentes**, $(v_x, v_y)$: cuánto vale a lo largo de cada eje. De un vector de módulo $v$ y ángulo $\theta$ sobre el eje horizontal:
+**Escalares y vectores.** Una **magnitud escalar** se describe con un número y su unidad: la masa, el tiempo, la temperatura. Una **magnitud vectorial** necesita además una dirección: no basta con decir que empujas con 10 newtons, hay que decir hacia dónde. Son vectores la posición, la velocidad, la aceleración y la fuerza. Un vector se dibuja como una flecha: su longitud es el **módulo** (cuánto vale) y su orientación, la dirección y el sentido.
+
+**Componentes.** Para calcular con vectores se colocan unos ejes, como en la semana 3, y cada vector se describe por cuánto avanza a lo largo de cada eje: sus **componentes**, $(v_x, v_y)$. Si conoces el módulo $v$ y el ángulo $\theta$ que forma con el eje horizontal, la flecha es la hipotenusa de un triángulo rectángulo cuyos catetos son las componentes. Con la trigonometría de la semana 7:
 
 $$v_x = v\cos\theta, \qquad v_y = v\sin\theta, \qquad v = \sqrt{v_x^2 + v_y^2}.$$
 
-Los vectores se **suman componente a componente**: $(a_x, a_y) + (b_x, b_y) = (a_x + b_x,\ a_y + b_y)$. Y se multiplican por un número multiplicando cada componente.
+La última fórmula es el teorema de Pitágoras.
+
+**Sumar vectores.** Los vectores se **suman componente a componente**: $(a_x, a_y) + (b_x, b_y) = (a_x + b_x,\ a_y + b_y)$. Gráficamente, se pone el origen de la segunda flecha en la punta de la primera, y la suma va del origen de la primera a la punta de la segunda. Por eso dos fuerzas de 3 N y 4 N pueden sumar 7 N (si empujan en la misma dirección), 1 N (si empujan en sentidos opuestos) o 5 N (si son perpendiculares). Un vector se multiplica por un número multiplicando cada componente: se alarga o se acorta sin cambiar de dirección.
+
+**Por qué importa aquí.** Cuando varias fuerzas actúan a la vez sobre un cuerpo, lo que cuenta es su suma vectorial, la **fuerza neta** o **resultante**. Y en un lanzamiento, el movimiento horizontal y el vertical se pueden estudiar por separado, cada uno con su componente: la gravedad solo afecta a la vertical.
 
 **Ejercicios**
 
@@ -64,30 +96,41 @@ Los vectores se **suman componente a componente**: $(a_x, a_y) + (b_x, b_y) = (a
 
 </details>
 
-### Sesión 3 · Física: las tres leyes de Newton (30-40 min)
+En la semana 16 volverás a los vectores con más detalle, para sumar las atracciones del Sol y la Tierra sobre la Luna.
 
-**Primera ley (inercia).** Si la fuerza neta sobre un cuerpo es cero, su velocidad no cambia: si estaba en reposo, sigue en reposo; si se movía, sigue en línea recta a velocidad constante. Todo cambio de velocidad, ya sea de módulo o de dirección, necesita una causa.
+### Sesión 3 · Física: las tres leyes de Newton (40-45 min)
+
+**Qué es una fuerza.** Una **fuerza** es un empujón o un tirón: lo que hace una mano, un muelle, un imán o la gravedad sobre un cuerpo. Es un vector, porque tiene dirección. No se ve directamente; se reconoce por su efecto: cambiar el movimiento de un cuerpo o deformarlo.
+
+**Primera ley (inercia).** Si la fuerza neta sobre un cuerpo es cero, su velocidad no cambia: si estaba en reposo, sigue en reposo; si se movía, sigue en línea recta a velocidad constante. Todo cambio de velocidad, ya sea de rapidez o de dirección, necesita una causa.
+
+Galileo llegó a esta idea con un experimento mental. Deja rodar una bola por una rampa: sube por otra rampa enfrente casi hasta la misma altura. Si la segunda rampa es menos inclinada, la bola recorre más camino para llegar a esa altura. Y si la segunda rampa fuera horizontal, la bola no llegaría nunca a la altura de partida: seguiría rodando para siempre, si nada la frenara. En la vida diaria siempre hay algo que frena (el rozamiento con el suelo, la resistencia del aire), y por eso la primera ley va contra la intuición.
 
 **Segunda ley.** La fuerza neta sobre un cuerpo es igual a su masa por su aceleración:
 
 $$\vec{F} = m\,\vec{a}.$$
 
-Es una relación entre vectores: la aceleración tiene la dirección de la fuerza. La unidad de fuerza es el **newton**: $1\ \text{N} = 1\ \text{kg}\cdot\text{m/s}^2$. A mayor masa, menos se acelera un cuerpo con la misma fuerza.
+Es una relación entre vectores: la aceleración tiene la misma dirección que la fuerza. Léela de dos maneras. Con la misma masa, una fuerza doble produce una aceleración doble. Con la misma fuerza, una masa doble se acelera la mitad: la **masa** mide cuánto se resiste un cuerpo a cambiar su movimiento, su inercia. Empujar un carro de la compra vacío o lleno es la diferencia. La unidad de fuerza es el **newton**: 1 N es la fuerza que da a 1 kg una aceleración de 1 m/s², es decir, $1\ \text{N} = 1\ \text{kg}\cdot\text{m/s}^2$. Una manzana pequeña pesa más o menos 1 N.
 
-**Tercera ley (acción y reacción).** Si un cuerpo A ejerce una fuerza sobre B, B ejerce sobre A una fuerza igual en módulo y de sentido contrario: $\vec{F}_{AB} = -\vec{F}_{BA}$. Actúan sobre cuerpos distintos, por eso no se anulan entre sí.
+**Tercera ley (acción y reacción).** Si un cuerpo A ejerce una fuerza sobre B, B ejerce sobre A una fuerza igual en módulo y de sentido contrario: $\vec{F}_{AB} = -\vec{F}_{BA}$. Cuando caminas, empujas el suelo hacia atrás y el suelo te empuja hacia delante; un cohete empuja los gases hacia abajo y los gases empujan el cohete hacia arriba. Las dos fuerzas actúan sobre cuerpos distintos, y por eso no se anulan entre sí.
 
-**Masa y peso.** La masa mide la cantidad de materia (y la inercia); el peso es la fuerza con la que un astro atrae un cuerpo: $W = m\,g$. Tu masa es la misma en la Luna y en la Tierra; tu peso no.
+**Masa y peso.** La masa mide la cantidad de materia (y la inercia) y se mide en kilogramos; el **peso** es la fuerza con la que un astro atrae un cuerpo, y se mide en newtons: $W = m\,g$. Tu masa es la misma en la Luna y en la Tierra; tu peso no: en la Luna es unas seis veces menor. Cuando una báscula dice «70 kg», en realidad mide tu peso y lo convierte suponiendo la gravedad de la Tierra.
 
-**Aplicado al cielo.** El Sistema Solar no necesita motores. Un planeta lleva su velocidad desde que se formó y la sigue conservando; lo que cambia su dirección a cada instante es la **fuerza gravitatoria** del Sol (fase 2). Newton comprobó incluso que la fuerza que hace caer una manzana y la que mantiene a la Luna en su órbita son la misma: la aceleración que necesita la Luna para describir su órbita ($v^2/r$) coincide, con un 1 % de error, con la de la gravedad terrestre debilitada con el cuadrado de la distancia. El cuaderno lo calcula.
+**Aplicado al cielo.** El Sistema Solar no necesita motores. Un planeta lleva su velocidad desde que se formó y la sigue conservando; lo que cambia su dirección a cada instante es la **fuerza gravitatoria** del Sol (fase 2). Newton comprobó incluso que la fuerza que hace caer una manzana y la que mantiene a la Luna en su órbita son la misma: la aceleración que necesita la Luna para describir su órbita ($v^2/r$, semana 8) coincide, con un 1 % de error, con la de la gravedad terrestre debilitada con el cuadrado de la distancia. El cuaderno lo calcula.
+
+:::note[De dónde viene la palabra]
+**Inercia** viene del latín *iners*, «inactivo, perezoso», de *in*, «sin», y *ars*, «habilidad, oficio»: algo que no hace nada por sí mismo. Kepler usó la palabra para la «pereza» de los cuerpos, y Newton habló de *vis inertiae*, la «fuerza de inercia». **Fuerza** viene del latín tardío *fortia*, de *fortis*, «fuerte». La unidad **newton** se adoptó oficialmente en 1948, en honor de Isaac Newton. **Kilogramo** junta el *khílioi* griego, «mil», con *grámma*, que en griego era «letra» y también una pequeña unidad de peso.
+:::
 
 **Qué hacer**
 
 1. Explica con tus palabras por qué un astronauta que suelta un objeto en el espacio exterior, lejos de cualquier astro, lo ve moverse en línea recta a velocidad constante.
 2. En una colisión entre una persona y un camión, ¿cómo comparan las fuerzas que se ejercen? ¿Y las aceleraciones?
+3. Calcula tu peso en newtons en la Tierra y en la Luna ($g_\text{Luna} \approx 1{,}62$ m/s²).
 
 ### Sesión 4 · Astronomía y observación (30-45 min)
 
-**Sigue un planeta durante varias semanas.** En Stellarium, busca un planeta que sea visible a simple vista en las próximas semanas (los planetas brillantes son fáciles de ver incluso desde una ciudad con mucha luz) y anota su posición respecto a las estrellas de fondo cada semana: dibuja las estrellas cercanas y marca el planeta con la fecha. Verás que se mueve despacio sobre el fondo de estrellas, sin que nada lo empuje, cumpliendo la primera ley. En la semana 13 explicarás por qué a veces parece ir hacia atrás.
+**Sigue un planeta durante varias semanas.** En Stellarium, busca un planeta que sea visible a simple vista en las próximas semanas (los planetas brillantes son fáciles de ver incluso desde una ciudad con mucha luz) y anota su posición respecto a las estrellas de fondo cada semana: dibuja las estrellas cercanas y marca el planeta con la fecha. Verás que se mueve despacio sobre el fondo de estrellas, sin que nada lo empuje hacia delante: solo la gravedad del Sol curva su camino. En la semana 13 explicarás por qué a veces parece ir hacia atrás.
 
 **Observación de la inercia en casa.** Pon una moneda sobre una tarjeta encima de un vaso y tira de la tarjeta con un golpe seco. Explica el resultado con las leyes de Newton.
 
@@ -107,8 +150,8 @@ El cuaderno de la semana 9:
 ## Qué has aprendido
 
 - **La respuesta.** Para cambiar un movimiento hace falta una fuerza neta, y el cambio es proporcional a ella e inversamente proporcional a la masa: $\vec{F} = m\vec{a}$. Sin fuerza, el movimiento continúa en línea recta a velocidad constante.
-- **La causa.** Los cuerpos tienen inercia, y los frenos de la vida diaria (rozamiento, resistencia del aire) ocultan esa propiedad.
-- **Las herramientas.** Funciones cuadráticas y la fórmula para resolverlas, vectores con sus componentes y su suma, y el método de Euler con la dependencia del error con el paso.
+- **La causa.** Los cuerpos tienen inercia, y los frenos de la vida diaria (rozamiento, resistencia del aire) ocultan esa propiedad. Por eso la física de Aristóteles parecía correcta durante tantos siglos.
+- **Las herramientas.** Funciones cuadráticas, su vértice, la fórmula para resolverlas (y de dónde sale) y el discriminante; vectores con sus componentes y su suma; y el método de Euler con la dependencia del error con el paso.
 
 ## Recursos
 
