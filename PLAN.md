@@ -28,6 +28,7 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 3. **Imágenes:** solo de NASA/ESA u otras fuentes libres, con la fuente y el enlace citados en la propia página. Se comprueba la licencia de cada imagen; las condiciones de ESA pueden variar de una imagen a otra.
 4. **Datos y cifras:** se verifican con fuente primaria. Si una cifra no se ha podido comprobar, se dice.
 5. **Tono:** agradable pero riguroso. Sin paternalismo ni ingenuidad: se trata a la persona lectora como a un adulto capaz. Se explica la intuición y también la formulación correcta, sin esconder la dificultad ni simplificar hasta decir algo falso. Se escribe siempre "matemáticas", nunca "mates".
+6. **Desde cero y con el origen de las palabras** (pedido tras leer las primeras semanas de la fase 1): no se da nada por sabido. Cada concepto se explica desde su fundamento, recordando lo necesario de semanas anteriores. Los términos clave llevan su etimología en un recuadro «De dónde viene la palabra». Se aplica desde la fase 2.
 
 ## Plantilla de cada semana
 
@@ -56,6 +57,6 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 | Plan y temario (este archivo y `TEMARIO.md`) | aprobado |
 | Esqueleto de la web (Starlight + despliegue) | publicado |
 | Fase 1 · Principios básicos de astronomía | escrita (semanas 1 a 12), pendiente de revisión |
-| Fase 2 · Órbitas | pendiente |
+| Fase 2 · Órbitas | escrita (semanas 13 a 24), pendiente de revisión |
 | Fase 3 · La luz | pendiente |
 | Fase 4 · El universo grande | pendiente |
