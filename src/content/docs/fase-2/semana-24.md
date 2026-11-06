@@ -83,7 +83,7 @@ Usarás los elementos del JPL para la época J2000, el mediodía del 1 de enero 
 **Qué esperar.** La simulación da longitudes **heliocéntricas** (vistas desde el Sol). Para saber dónde mirar en el cielo hay que pasar a **geocéntricas** restando la posición de la Tierra (semana 19), y después, si quieres, a ascensión recta y declinación con la rotación de la oblicuidad.
 
 :::note[De dónde viene la palabra]
-**Efeméride** viene del griego *ephēmerís*, «diario, registro de cada día», de *epí*, «sobre», y *hēméra*, «día». Las efemérides astronómicas eran tablas con la posición de los astros para cada día. La misma raíz da **efímero**, «que dura un día». **Integrar** viene del latín *integrare*, «completar, hacer entero», de *integer*, «entero, intacto»: integrar una ecuación es reconstruir el movimiento entero a partir de sus cambios. **Época** viene del griego *epochḗ*, «detención, parada»: el instante en que se detiene el reloj para tomar las medidas.
+**Efeméride** viene del griego *ephēmerís*, «diario, registro de cada día», de *epí*, «sobre», y *hēméra*, «día». Las efemérides astronómicas eran tablas con la posición de los astros para cada día. La misma raíz da **efímero**, «que dura un día». **Época** viene del griego *epochḗ*, «detención, parada»: el instante en que se detiene el reloj para tomar las medidas. La palabra **integrar** la tienes explicada en la semana 11.
 :::
 
 **Qué hacer**

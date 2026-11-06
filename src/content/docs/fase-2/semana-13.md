@@ -46,7 +46,7 @@ Esta es la herramienta de la semana: con un radio y un ángulo sabes dónde est�
 **Radianes, otra vez.** En la semana 2 viste que un radián es el ángulo cuyo arco mide lo mismo que el radio, y que una vuelta son $2\pi$ radianes. Python, y casi toda la física, trabaja en radianes: `np.cos(np.pi)` vale $-1$, pero `np.cos(180)` no es el coseno de 180°.
 
 :::note[De dónde viene la palabra]
-**Seno** tiene una historia enrevesada. Los matemáticos indios lo llamaban *jyā*, «cuerda de arco». Los árabes lo transcribieron como *jiba*, que en la escritura árabe sin vocales se confundía con *jaib*, «bolsillo, pliegue». En el siglo XII se tradujo al latín como *sinus*, que significa «pliegue, bahía». **Coseno** es una abreviatura de *complementi sinus*, «seno del complemento», porque $\cos\theta = \sin(90^\circ - \theta)$. **Radián** viene de radio, del latín *radius*, «rayo, varilla de rueda».
+**Cuadrante** viene del latín *quadrans*, «la cuarta parte»: cada una de las cuatro regiones en que los ejes dividen el plano. Era también el nombre de un instrumento astronómico, un cuarto de círculo graduado con el que se medía la altura de los astros. La historia de las palabras **seno**, **coseno** y **radián** la tienes en las semanas 7 y 2.
 :::
 
 **Ejercicios**
