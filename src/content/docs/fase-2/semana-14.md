@@ -112,7 +112,7 @@ En los dos extremos, la velocidad es perpendicular al radio y el área barrida e
 
 $$\frac{v_\text{p}}{v_\text{a}} = \frac{r_\text{a}}{r_\text{p}} = \frac{1 + e}{1 - e}.$$
 
-Hoy sabemos que la segunda ley es la **conservación del momento angular**: la fuerza del Sol siempre apunta hacia el Sol y no puede hacer girar el planeta más deprisa ni más despacio alrededor de él. Lo verás con detalle en la fase 4.
+Hoy sabemos que la segunda ley es la **conservación del momento angular**: la fuerza del Sol siempre apunta hacia el Sol y no puede hacer girar el planeta más deprisa ni más despacio alrededor de él.
 
 **La Tierra.** La excentricidad de la órbita terrestre es pequeña, $e \approx 0{,}0167$. Su distancia al Sol varía entre unos 147,1 millones de km en el perihelio, a principios de enero, y unos 152,1 millones en el afelio, a principios de julio. En el hemisferio norte es invierno cuando estamos más cerca del Sol: las estaciones las produce la inclinación del eje (semana 1), no la distancia. Pero la segunda ley sí se nota: la Tierra va más deprisa en enero, y por eso el semestre de otoño e invierno del hemisferio norte (del equinoccio de septiembre al de marzo) dura unos 179 días, y el de primavera y verano, unos 186.
 
