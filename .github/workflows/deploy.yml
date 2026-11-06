@@ -39,6 +39,13 @@ jobs:
           n=$(grep -o 'class="katex"' dist/fase-1/semana-02/index.html | wc -l)
           echo "Fórmulas encontradas en la semana 2: $n"
           if [ "$n" -lt 3 ]; then echo "::error title=Fórmulas::No se renderizan las fórmulas (encontradas: $n)"; exit 1; fi
+          errores=$(grep -l 'katex-error' -r dist --include=index.html || true)
+          if [ -n "$errores" ]; then echo "::error title=Fórmulas::Hay fórmulas con errores en: $errores"; exit 1; fi
+          resumen=""
+          for f in dist/fase-*/semana-*/index.html; do
+            resumen="$resumen $(basename $(dirname $f))=$(grep -o 'class="katex"' $f | wc -l)"
+          done
+          echo "::notice title=Fórmulas por semana::$resumen"
       - name: Preparar el artefacto para GitHub Pages
         uses: actions/upload-pages-artifact@v5
         with:
