@@ -1,6 +1,6 @@
 ---
 title: "Semana 3 · ¿Cómo digo dónde está cada cosa en el cielo?"
-description: "Fase 1 · Principios básicos de astronomía. Coordenadas horizontales y ecuatoriales, y la altura de la estrella Polar."
+description: "Fase 1 · Principios básicos de astronomía. El plano cartesiano, latitud y longitud, coordenadas horizontales y ecuatoriales, y la altura de la estrella Polar."
 sidebar:
   order: 3
   label: "3. ¿Cómo digo dónde está cada cosa en el cielo?"
@@ -8,15 +8,28 @@ sidebar:
 
 ## La pregunta del cielo
 
-Para decirle a alguien dónde mirar necesitas un sistema de referencia, igual que una dirección postal. El problema es que el cielo gira: la estrella que ves ahora a tu izquierda estará a tu derecha dentro de unas horas, y lo que ves desde tu ciudad no es lo que ve alguien en otra latitud. Hacen falta dos sistemas distintos: uno pegado a ti (el horizonte y el cenit de tu lugar) y otro pegado a las estrellas.
+Para decirle a alguien dónde mirar necesitas un sistema de referencia, igual que una dirección postal. El problema es que el cielo gira: la estrella que ves ahora a tu izquierda estará a tu derecha dentro de unas horas, y lo que ves desde tu ciudad no es lo que ve alguien en otra latitud. Hacen falta dos sistemas distintos: uno pegado a ti (el horizonte y el cénit de tu lugar) y otro pegado a las estrellas.
 
-Esta semana aprendes los dos, a convertir las unidades que usan, y a responder una pregunta concreta: ¿por qué la altura de la estrella Polar sobre el horizonte te dice la latitud en la que estás?
+Esta semana aprendes qué son unas coordenadas, los dos sistemas del cielo, a convertir las unidades que usan, y a responder una pregunta concreta: ¿por qué la altura de la estrella Polar sobre el horizonte te dice la latitud en la que estás?
 
 ## Las cinco sesiones
 
-### Sesión 1 · Matemáticas: el plano cartesiano (30-35 min)
+### Sesión 1 · Matemáticas: el plano cartesiano y las coordenadas (35-40 min)
 
-Un **punto del plano** se describe con dos números $(x, y)$: cuánto te desplazas en horizontal y en vertical desde un origen. Las **coordenadas** son exactamente eso, y el mapa del cielo no es más que un plano donde $x$ es la ascensión recta e $y$ la declinación (las definimos en la sesión 3). Lo importante es saber leer y dibujar: elegir una escala en cada eje, marcar los puntos y decidir en qué sentido crece cada eje. En los mapas del cielo es habitual que el eje horizontal crezca hacia la **izquierda**, porque se dibuja el cielo tal como lo ves cuando miras al sur, con el este a la izquierda.
+**Dos números para un punto.** Para señalar un punto en una hoja de papel bastan dos números. Se dibujan dos rectas perpendiculares, los **ejes**: uno horizontal, el eje $x$, y uno vertical, el eje $y$. Se cruzan en un punto llamado **origen**. Cada punto de la hoja se describe con dos números $(x, y)$: cuánto te desplazas en horizontal desde el origen y cuánto en vertical. Esos dos números son sus **coordenadas**. El orden importa: $(2, 5)$ y $(5, 2)$ son puntos distintos, y por convenio se escribe siempre primero el horizontal.
+
+Las coordenadas pueden ser negativas: un número negativo significa que hay que ir hacia el otro lado del origen (a la izquierda o hacia abajo). Los dos ejes dividen el plano en cuatro regiones, los **cuadrantes**: en el primero, arriba a la derecha, las dos coordenadas son positivas; en el tercero, abajo a la izquierda, las dos son negativas.
+
+**Coordenadas en una esfera.** La superficie de la Tierra no es un plano, pero también basta con dos números para situar un lugar, aunque ahora son ángulos:
+
+- La **latitud** es el ángulo al norte o al sur del ecuador: 0° en el ecuador, 90° norte en el polo norte, 90° sur en el polo sur.
+- La **longitud** es el ángulo al este o al oeste de un meridiano de referencia, el que pasa por el observatorio de Greenwich, en Londres: va de 0° a 180° hacia cada lado.
+
+Un mapa del mundo es un plano donde $x$ es la longitud e $y$ la latitud. El mapa del cielo es lo mismo: un plano donde $x$ es la ascensión recta e $y$ la declinación (las definimos en la sesión 3). Lo importante es saber leer y dibujar: elegir una escala en cada eje, marcar los puntos y decidir en qué sentido crece cada eje. En los mapas del cielo es habitual que el eje horizontal crezca hacia la **izquierda**, porque se dibuja el cielo tal como lo ves cuando miras al sur, con el este a la izquierda. Un mapa de la Tierra se mira desde fuera; un mapa del cielo, desde dentro.
+
+:::note[De dónde viene la palabra]
+**Cartesiano** viene de *Cartesius*, el nombre latinizado de René Descartes, que en 1637 publicó la idea de describir curvas con ecuaciones entre coordenadas y unió así el álgebra y la geometría. **Coordenada** viene del latín *co-*, «juntos», y *ordinare*, «ordenar»: números que se ordenan juntos. **Latitud** y **longitud** son las palabras latinas para «anchura» y «largura». Vienen de los mapas antiguos, como los de Ptolomeo, en los que el mundo conocido, de España a la India, era mucho más largo de este a oeste que ancho de norte a sur: la longitud se medía a lo largo y la latitud a lo ancho.
+:::
 
 **Ejercicios**
 
@@ -35,9 +48,13 @@ Un **punto del plano** se describe con dos números $(x, y)$: cuánto te desplaz
 
 ### Sesión 2 · Matemáticas: horas, minutos y grados (30-40 min)
 
-La ascensión recta se mide en **horas**, porque está ligada a la rotación de la Tierra: en 24 horas el cielo da una vuelta completa de 360°, luego 1 hora equivale a 15°. Todo el sistema sexagesimal sigue: 1 minuto de tiempo equivale a 15′ de arco (la hora se divide en 60 minutos, como el grado) y 1 segundo de tiempo a 15″. Para pasar de horas y minutos a grados: $\text{grados} = (h + m/60) \cdot 15$.
+**Por qué un ángulo se mide en horas.** La ascensión recta se mide en **horas** porque está ligada a la rotación de la Tierra. El cielo da una vuelta completa de 360° en 24 horas (en realidad, en un día sidéreo, unos 4 minutos menos, como viste en la semana 1). Así que 1 hora equivale a $360^\circ / 24 = 15^\circ$. Piensa en la esfera de un reloj gigante pintada sobre el cielo: si una estrella tiene una ascensión recta de 2 h más que otra, pasa por el sur dos horas más tarde.
 
-La declinación se mide en grados y minutos de arco, con signo (positiva al norte del ecuador celeste, negativa al sur). Cuidado con los signos: −8° 12′ es −8,2°, es decir, −(8 + 12/60), no −8 + 0,2.
+Todo el sistema sexagesimal sigue: 1 minuto de tiempo equivale a 15′ de arco (la hora se divide en 60 minutos, como el grado) y 1 segundo de tiempo a 15″. Cuidado con la confusión de nombres: un «minuto de tiempo» de ascensión recta vale 15 «minutos de arco». Para pasar de horas y minutos a grados:
+
+$$\text{grados} = \left(h + \frac{m}{60}\right) \cdot 15.$$
+
+**La declinación** se mide en grados y minutos de arco, con signo: positiva al norte del ecuador celeste, negativa al sur. Cuidado con los signos al pasar a decimales: −8° 12′ es −8,2°, es decir, −(8 + 12/60), no −8 + 0,2. El signo afecta a todo el número.
 
 **Ejercicios**
 
@@ -58,28 +75,47 @@ La declinación se mide en grados y minutos de arco, con signo (positiva al nort
 
 </details>
 
-### Sesión 3 · Física: sistemas de referencia (30-40 min)
+### Sesión 3 · Física: sistemas de referencia (35-45 min)
 
-**Horizontal.** Está pegado al observador. Se mide la **altura** $h$ (ángulo sobre el horizonte, de 0° a 90° en el cenit) y el **azimut** $A$ (ángulo sobre el horizonte, contado desde el norte hacia el este, de 0° a 360°). Es intuitivo y tiene un defecto: cambia con el lugar y con la hora. Una estrella tiene altura y azimut distintos cada minuto.
+**La esfera celeste.** Las estrellas están a distancias enormes y muy distintas, pero a simple vista no se nota: todas parecen pegadas a una gran esfera con centro en ti. Esa **esfera celeste** es una ficción, pero una ficción muy útil: como solo nos interesa la dirección en la que vemos cada astro, podemos tratarlos todos como puntos sobre la esfera y usar en ella coordenadas, como en la superficie de la Tierra. Para la esfera celeste, la Tierra es un punto en el centro.
 
-**Ecuatorial.** Está pegado a las estrellas. Proyecta el ecuador terrestre en el cielo (el **ecuador celeste**) y los polos terrestres en los **polos celestes**. La **declinación** $\delta$ juega el papel de la latitud (de −90° a +90°) y la **ascensión recta** $\alpha$ el de la longitud, contada hacia el este desde el punto donde el Sol cruza el ecuador en marzo. Las coordenadas ecuatoriales de una estrella son prácticamente constantes: no dependen del lugar ni de la hora. Cambian muy despacio por la precesión del eje terrestre, unos 50″ al año, y por eso los catálogos indican la época de los datos (aquí, J2000).
+**Horizontal.** Está pegado al observador. El **horizonte** es el plano del suelo, prolongado hasta el cielo. El punto justo sobre tu cabeza es el **cénit** y el opuesto, bajo tus pies, el **nadir**. Se miden dos ángulos:
 
-**Por qué la Polar da tu latitud.** El eje de la Tierra apunta, con muy buena aproximación, hacia la Polar. El polo norte celeste está sobre el horizonte a una altura igual a tu latitud: en el polo norte de la Tierra está en el cenit (90°), en el ecuador está en el horizonte (0°). La Polar, a menos de 1° del polo celeste, se queda siempre prácticamente en el mismo sitio, y su altura es tu latitud con ese error.
+- la **altura** $h$, ángulo sobre el horizonte, de 0° en el horizonte a 90° en el cénit;
+- el **azimut** $A$, ángulo a lo largo del horizonte, contado desde el norte hacia el este, de 0° a 360°.
 
-**Altura máxima de una estrella.** Cada día una estrella cruza el meridiano (el arco norte-cenit-sur). El ecuador celeste corta el meridiano sur a una altura de $90^\circ - \varphi$, donde $\varphi$ es tu latitud norte. Una estrella con declinación $\delta$ está $\delta$ grados por encima de ese punto, luego
+Es intuitivo y tiene un defecto: cambia con el lugar y con la hora. Una estrella tiene altura y azimut distintos cada minuto. El arco que va del norte al sur pasando por el cénit se llama **meridiano**: todas las estrellas alcanzan su mayor altura al cruzarlo, y el Sol lo cruza al mediodía.
+
+**Ecuatorial.** Está pegado a las estrellas. Proyecta el ecuador terrestre en el cielo (el **ecuador celeste**) y los polos terrestres en los **polos celestes**, los dos puntos alrededor de los que parece girar todo el cielo. Se miden otros dos ángulos:
+
+- la **declinación** $\delta$, que juega el papel de la latitud: de −90° en el polo sur celeste a +90° en el norte;
+- la **ascensión recta** $\alpha$, que juega el papel de la longitud: se cuenta hacia el este a lo largo del ecuador celeste, desde el punto donde el Sol lo cruza en el equinoccio de marzo (el **punto Aries**, el «Greenwich» del cielo).
+
+Las coordenadas ecuatoriales de una estrella son prácticamente constantes: no dependen del lugar ni de la hora, porque el sistema gira con el cielo. Cambian muy despacio porque el eje de la Tierra se tambalea como el de una peonza y describe un cono completo en unos 26 000 años: es la **precesión**, y desplaza las coordenadas unos 50″ al año. Por eso los catálogos indican la fecha de referencia de los datos, la **época**. La habitual es la J2000, el 1 de enero de 2000.
+
+**Por qué la Polar da tu latitud.** Primero, qué es tu latitud con un dibujo: es el ángulo entre tu **vertical** (la dirección de una plomada, que apunta al centro de la Tierra) y el plano del ecuador. Ahora gira las dos cosas un ángulo recto. Tu horizonte es perpendicular a tu vertical, y el eje de la Tierra es perpendicular al ecuador. Si giras dos rectas 90° cada una, el ángulo que forman entre sí no cambia (haz la prueba con dos lápices), así que el ángulo entre tu horizonte y el eje de la Tierra es igual a tu latitud. Como las estrellas están tan lejos que sus rayos llegan paralelos a cualquier punto de la Tierra, el polo norte celeste se ve en la dirección del eje: a una altura igual a tu latitud. En el polo norte de la Tierra está en el cénit (90°), en el ecuador está en el horizonte (0°). La Polar, a menos de 1° del polo celeste, se queda siempre prácticamente en el mismo sitio, y su altura es tu latitud con ese error.
+
+**Altura máxima de una estrella.** Cada día una estrella cruza el meridiano. El ecuador celeste corta el meridiano sur a una altura de $90^\circ - \varphi$, donde $\varphi$ (la letra griega fi) es tu latitud norte: es el complemento de la altura del polo, porque el ecuador está siempre a 90° de él. Una estrella con declinación $\delta$ está $\delta$ grados por encima de ese punto, luego
 
 $$h_{\max} = 90^\circ - \varphi + \delta \quad (\text{si } \delta < \varphi), \qquad \text{y en general } h_{\max} = 90^\circ - |\varphi - \delta|.$$
 
-De ahí salen las **circumpolares** (nunca se ponen, si $\delta > 90^\circ - \varphi$) y las que nunca salen desde tu latitud.
+Las barras $|\ |$ indican el **valor absoluto**: el número sin su signo. Es la misma fórmula que usaste en la semana 1 para la altura del Sol al mediodía, porque el Sol es una estrella más, con una declinación que cambia a lo largo del año.
+
+De ahí salen las **circumpolares**, que giran alrededor del polo sin llegar a ponerse nunca (si $\delta > 90^\circ - \varphi$), y las que nunca llegan a salir desde tu latitud (si $\delta < -(90^\circ - \varphi)$).
+
+:::note[De dónde viene la palabra]
+**Polo** viene del griego *pólos*, «eje, pivote», del verbo *pélein*, «girar»: el punto alrededor del que gira algo. **Meridiano** viene del latín *meridies*, «mediodía» (*medius dies*): la línea por la que pasa el Sol a mediodía. **Nadir** es árabe, como cénit: *naẓīr as-samt*, «lo opuesto al cénit». **Ascensión recta** traduce el latín medieval *ascensio recta*. Los astrónomos llamaban «esfera recta» al cielo visto desde el ecuador terrestre, donde los astros salen en línea recta, perpendiculares al horizonte; allí, la ascensión recta de un punto del cielo indica cuándo sale. **Precesión** viene de *praecedere*, «ir delante»: por este movimiento, el equinoccio llega cada año un poco antes respecto a las estrellas.
+:::
 
 **Qué hacer**
 
-1. Dibuja la esfera celeste con el horizonte, el cenit, el polo norte celeste a la altura de tu latitud y el ecuador celeste. Marca dónde cruza una estrella de $\delta = 20^\circ$.
+1. Dibuja la esfera celeste con el horizonte, el cénit, el polo norte celeste a la altura de tu latitud y el ecuador celeste. Marca dónde cruza el meridiano una estrella de $\delta = 20^\circ$.
 2. Responde: ¿qué estrellas son circumpolares en el polo norte? ¿Y en el ecuador?
+3. Calcula, para tu latitud, la declinación mínima que debe tener una estrella para ser circumpolar.
 
 ### Sesión 4 · Astronomía y observación (30-45 min)
 
-**En el cielo (si está despejado).** Localiza la Polar prolongando cinco veces la distancia entre las dos estrellas del extremo del Carro (la Osa Mayor), o con Casiopea. Mide su altura con la mano, a brazo extendido (puño ≈ 10°) y compárala con tu latitud. Si tienes un cuadrante o una cruceta, el material de astronomas.org (recurso 1) explica cómo construirlos.
+**En el cielo (si está despejado).** Localiza la Polar. El método clásico usa la Osa Mayor, cuyas siete estrellas más brillantes forman el Carro: las dos estrellas del extremo de la caja, las más alejadas del mango, apuntan hacia la Polar. Prolonga unas cinco veces la distancia entre ellas y llegarás a una estrella no muy brillante, sola en su zona: es la Polar. También se encuentra desde Casiopea, la «W» del otro lado del polo. Mide su altura con la mano, a brazo extendido (puño ≈ 10°) y compárala con tu latitud. Si tienes un cuadrante o una cruceta, el material de astronomas.org (recurso 1) explica cómo construirlos.
 
 **En Stellarium.**
 
@@ -101,9 +137,9 @@ El cuaderno de la semana 3:
 
 ## Qué has aprendido
 
-- **La respuesta.** Hay dos formas de situar un objeto: respecto a ti (altura y azimut, que cambian con la hora y el lugar) y respecto a las estrellas (ascensión recta y declinación, casi fijas). La altura de la Polar vale tu latitud porque el eje de la Tierra apunta, casi exactamente, hacia ella.
+- **La respuesta.** Hay dos formas de situar un objeto: respecto a ti (altura y azimut, que cambian con la hora y el lugar) y respecto a las estrellas (ascensión recta y declinación, casi fijas). La altura de la Polar vale tu latitud porque el eje de la Tierra apunta, casi exactamente, hacia ella, y el ángulo entre tu horizonte y ese eje es tu latitud.
 - **La causa.** La Tierra gira alrededor de un eje, que corta la esfera celeste en los polos celestes, y tu horizonte está inclinado respecto a ese eje según tu latitud.
-- **Las herramientas.** Plano cartesiano y coordenadas; conversión entre horas, minutos y grados; y la fórmula de la altura máxima de una estrella en función de su declinación y de tu latitud.
+- **Las herramientas.** El plano cartesiano y las coordenadas, también sobre una esfera (latitud y longitud); conversión entre horas, minutos y grados; el valor absoluto; y la fórmula de la altura máxima de una estrella en función de su declinación y de tu latitud.
 
 ## Recursos
 
