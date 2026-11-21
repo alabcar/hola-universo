@@ -171,6 +171,45 @@ El cuaderno de la semana 15:
 - **El método.** Los periodos sidéreos no se observan directamente: se deducen de los sinódicos, que se miden contando el tiempo entre oposiciones.
 - **Las herramientas.** Proporciones con potencias, exponentes fraccionarios, logaritmos y sus propiedades, y la gráfica log-log como forma de reconocer y medir una ley de potencias.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar. Usa la constante de la gravitación, $G$, que verás en la semana 16.
+
+**Lo que dicen las unidades.** Toda magnitud física tiene **dimensiones**: longitud (L), masa (M), tiempo (T), o combinaciones de ellas, como la velocidad, L/T. Los dos lados de una ecuación tienen que tener las mismas dimensiones: no se pueden igualar metros con segundos. Esta exigencia, que parece trivial, permite adivinar la forma de muchas leyes. Es el **análisis dimensional**.
+
+**El péndulo.** El periodo de un péndulo podría depender de su longitud $l$, de la gravedad $g$ (dimensiones L/T²) y de la masa $m$. Prueba $T = C\,l^\alpha g^\beta m^\gamma$, con $C$ un número sin unidades. Las dimensiones de los dos lados deben coincidir: $\text{T}^1 = \text{L}^\alpha\,(\text{L}\,\text{T}^{-2})^\beta\,\text{M}^\gamma$. Igualando los exponentes de cada dimensión: en la masa, $\gamma = 0$; en el tiempo, $1 = -2\beta$, así que $\beta = -1/2$; en la longitud, $\alpha + \beta = 0$, así que $\alpha = 1/2$. Resultado: $T = C\sqrt{l/g}$. La masa no puede aparecer, porque no hay nada con lo que cancelar los kilogramos. Lo que el análisis dimensional no da es el número $C$, que vale $2\pi$ para oscilaciones pequeñas.
+
+**La tercera ley de Kepler sin hacer cuentas.** El periodo de una órbita puede depender de su tamaño $a$ y de la gravedad del Sol, que entra a través del producto $G M$ (en la semana 16 verás que tiene dimensiones $\text{L}^3/\text{T}^2$). Con $T = C\,a^\alpha\,(GM)^\beta$: en el tiempo, $1 = -2\beta$; en la longitud, $\alpha + 3\beta = 0$. Sale $\beta = -1/2$ y $\alpha = 3/2$:
+
+$$T = C\sqrt{\frac{a^3}{GM}}, \qquad T^2 \propto a^3.$$
+
+La tercera ley de Kepler está escondida en las unidades de la gravedad. La teoría de Newton añade que $C = 2\pi$.
+
+**Una órbita rasante solo depende de la densidad.** Si un satélite orbita rozando la superficie de un astro esférico de radio $R$ y densidad media $\rho$, su masa es $M = \tfrac{4}{3}\pi R^3\rho$, y el periodo queda
+
+$$T = 2\pi\sqrt{\frac{R^3}{G\cdot\frac{4}{3}\pi R^3\rho}} = \sqrt{\frac{3\pi}{G\rho}}.$$
+
+El radio ha desaparecido: cualquier astro con la densidad de la Tierra, sea del tamaño que sea, tiene órbitas rasantes de unos 84 minutos. En la Luna salen 108 minutos; en el Sol, unas 2,8 horas. Y en una estrella de neutrones, con una densidad de unos $5 \times 10^{17}\ \text{kg/m}^3$, medio milisegundo. Es la misma fórmula que usarás en la semana 36 para calcular lo deprisa que puede girar un púlsar sin romperse.
+
+:::note[De dónde viene la palabra]
+**Dimensión** viene del latín *dimensio*, «medida», de *dimetiri*, «medir por todas partes», de *di-*, «en distintas direcciones», y *metiri*, «medir».
+:::
+
+**Ejercicios**
+
+1. ¿Qué periodo tiene un péndulo de 1 m de longitud?
+2. Un planeta tiene la misma densidad que la Tierra y el doble de radio. ¿Cuánto dura una órbita rasante? ¿Cuánto vale la gravedad en su superficie comparada con la de la Tierra? (Pista: $g = GM/R^2$.)
+3. Calcula el periodo de una órbita rasante alrededor de un astro con la densidad del agua, $1000\ \text{kg/m}^3$. Usa $G = 6{,}67 \times 10^{-11}$ en unidades del SI.
+
+<details>
+<summary>Soluciones</summary>
+
+1. $T = 2\pi\sqrt{1/9{,}81} \approx$ **2,0 s**: tarda un segundo en ir y otro en volver. Por eso se llamaba «péndulo de segundos».
+2. La órbita rasante dura lo mismo, **84 minutos**, porque solo depende de la densidad. La gravedad es $g = G\cdot\tfrac{4}{3}\pi R^3\rho/R^2 = \tfrac{4}{3}\pi G\rho R$: proporcional al radio, así que es el **doble**.
+3. $T = \sqrt{3\pi/(6{,}67 \times 10^{-11} \cdot 1000)} \approx 11\,900$ s, unas **3,3 horas**.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

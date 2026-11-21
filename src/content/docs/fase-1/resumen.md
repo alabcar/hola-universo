@@ -8,7 +8,7 @@ sidebar:
 
 ## Objetivo
 
-Aprender a orientarte en el cielo, medir ángulos, tiempos y distancias, y recuperar las matemáticas y la física que lo sostienen: álgebra, trigonometría, vectores, cálculo y la mecánica de Newton. Cada semana parte de una pregunta del cielo y estudia solo lo necesario para responderla. Las matemáticas empiezan desde cero: cada tema se explica desde su fundamento, con la razón de cada fórmula, y los términos clave llevan un recuadro «De dónde viene la palabra» con su origen, porque entender de dónde viene un nombre suele ayudar a entender la idea. Los proyectos en Python, en cuadernos que se abren en el navegador, empiezan con gráficas sencillas y terminan con simulaciones.
+Aprender a orientarte en el cielo, medir ángulos, tiempos y distancias, y recuperar las matemáticas y la física que lo sostienen: álgebra, trigonometría, vectores, cálculo y la mecánica de Newton. Cada semana parte de una pregunta del cielo y estudia solo lo necesario para responderla. Las matemáticas empiezan desde cero: cada tema se explica desde su fundamento, con la razón de cada fórmula, y los términos clave llevan un recuadro «De dónde viene la palabra» con su origen, porque entender de dónde viene un nombre suele ayudar a entender la idea. Los proyectos en Python, en cuadernos que se abren en el navegador, empiezan con gráficas sencillas y terminan con simulaciones. Cada semana tiene además un apartado **Para ir más lejos (opcional)**, con matemáticas más avanzadas y ejercicios resueltos, para cuando quieras volver a ella y profundizar.
 
 ## Qué serás capaz de hacer al terminar
 
@@ -35,19 +35,19 @@ Aprender a orientarte en el cielo, medir ángulos, tiempos y distancias, y recup
 
 ## Mapa de la fase
 
-| Semana | Matemáticas | Física | Proyecto en Python |
-|---|---|---|---|
-| 1 | Potencias de 10, notación científica, escalas | Rotación, traslación, inclinación | Maqueta a escala y horas de luz |
-| 2 | Ángulos, el número π, radianes | Tamaño aparente | Calculadora de tamaño angular |
-| 3 | Plano cartesiano, latitud y longitud, horas y grados | Sistemas de referencia | Mapa de estrellas y alturas |
-| 4 | Funciones, pendiente, resto y periodicidad | Día solar y sidéreo | Qué culmina cada mes |
-| 5 | Fracciones, porcentajes, ángulos | Geometría Sol-Tierra-Luna | Fase de la Luna de cualquier día |
-| 6 | Triángulos, paralelas, semejanza, tangente | Método de Eratóstenes | Circunferencia de la Tierra |
-| 7 | Pitágoras, seno, coseno, paralaje | Distancia a la Luna | Resolver triángulos |
-| 8 | Ecuaciones lineales | Velocidad y aceleración | Simulación de un movimiento |
-| 9 | Cuadráticas y su fórmula, vectores | Leyes de Newton | Caída y lanzamientos |
-| 10 | Derivadas | Velocidad instantánea | Derivada numérica |
-| 11 | Integrales | Acumular magnitudes | Noche astronómica anual |
-| 12 | Trabajo y energía, repaso | Conservación de la energía | Péndulo y métodos numéricos |
+| Semana | Matemáticas | Física | Proyecto en Python | Para ir más lejos |
+|---|---|---|---|---|
+| 1 | Potencias de 10, notación científica, escalas | Rotación, traslación, inclinación | Maqueta a escala y horas de luz | Salida del Sol y horas de luz |
+| 2 | Ángulos, el número π, radianes | Tamaño aparente | Calculadora de tamaño angular | Ángulo sólido y grados cuadrados |
+| 3 | Plano cartesiano, latitud y longitud, horas y grados | Sistemas de referencia | Mapa de estrellas y alturas | La altura de un astro a cualquier hora |
+| 4 | Funciones, pendiente, resto y periodicidad | Día solar y sidéreo | Qué culmina cada mes | La ecuación del tiempo |
+| 5 | Fracciones, porcentajes, ángulos | Geometría Sol-Tierra-Luna | Fase de la Luna de cualquier día | Fracción iluminada y mes sinódico |
+| 6 | Triángulos, paralelas, semejanza, tangente | Método de Eratóstenes | Circunferencia de la Tierra | Distancia al horizonte, dos puestas de Sol |
+| 7 | Pitágoras, seno, coseno, paralaje | Distancia a la Luna | Resolver triángulos | Aristarco y la distancia al Sol |
+| 8 | Ecuaciones lineales | Velocidad y aceleración | Simulación de un movimiento | Frenar y caer: $v^2 = v_0^2 + 2a\,\Delta x$ |
+| 9 | Cuadráticas y su fórmula, vectores | Leyes de Newton | Caída y lanzamientos | Velocidad límite, aterrizar en Marte |
+| 10 | Derivadas | Velocidad instantánea | Derivada numérica | Derivada del seno, regla de la cadena |
+| 11 | Integrales | Acumular magnitudes | Noche astronómica anual | Volúmenes por rodajas |
+| 12 | Trabajo y energía, repaso | Conservación de la energía | Péndulo y métodos numéricos | Trabajo de una fuerza variable |
 
 Cuando termines, pasa a la fase 2, **Órbitas**, que usa todo esto para explicar por qué los planetas se mueven como se mueven.

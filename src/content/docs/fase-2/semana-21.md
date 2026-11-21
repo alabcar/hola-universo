@@ -141,6 +141,41 @@ El cuaderno de la semana 21:
 - **La física.** La aceleración de marea vale aproximadamente $2GMR/d^3$: disminuye con el cubo de la distancia. Por eso la Luna, mucho más cercana, produce mareas mayores que el Sol, aunque el Sol nos atraiga mucho más.
 - **Las herramientas.** Órdenes de magnitud, estimaciones de Fermi, cifras significativas y la aproximación binomial $(1 + x)^n \approx 1 + nx$.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Cuándo las mareas rompen una luna.** En la sesión 2 has calculado que, a una distancia $d$ de una masa $M$, la diferencia de atracción entre el centro y el borde de un cuerpo de radio $r$ es aproximadamente $2GMr/d^3$. Si ese cuerpo es una luna de masa $m$ hecha de material suelto (escombros, hielo, un líquido), lo único que la mantiene unida es su propia gravedad, que en su superficie vale $Gm/r^2$. Si la marea tira más que la gravedad propia, la luna se deshace. El límite está donde las dos se igualan:
+
+$$\frac{2GMr}{d^3} = \frac{Gm}{r^2} \quad\Longrightarrow\quad d^3 = \frac{2M}{m}\,r^3.$$
+
+Escribe las masas con sus densidades y radios, $M = \tfrac{4}{3}\pi R^3\rho_M$ y $m = \tfrac{4}{3}\pi r^3\rho_m$, y el radio de la luna desaparece:
+
+$$d = R\left(\frac{2\rho_M}{\rho_m}\right)^{1/3} \approx 1{,}26\,R\left(\frac{\rho_M}{\rho_m}\right)^{1/3}.$$
+
+Es una estimación sencilla. Édouard Roche la hizo en 1848 con más cuidado, teniendo en cuenta que una luna fluida se estira con la marea y eso la debilita más, y obtuvo
+
+$$d_\text{Roche} \approx 2{,}44\,R\left(\frac{\rho_M}{\rho_m}\right)^{1/3}.$$
+
+Es el **límite de Roche**. Dentro de él, una luna grande hecha de material suelto no puede formarse ni sobrevivir; los fragmentos se reparten en un anillo. Los anillos principales de Saturno están prácticamente dentro de su límite de Roche, y sus lunas grandes, fuera. En julio de 1992, el cometa Shoemaker-Levy 9 pasó dentro del límite de Roche de Júpiter y se partió en una veintena de trozos, que chocaron contra el planeta en julio de 1994. Y Fobos, la luna mayor de Marte, está a 9376 km del centro del planeta y se acerca poco a poco: dentro de unas decenas de millones de años se romperá o caerá.
+
+Los objetos que se mantienen unidos por la resistencia de su material, y no por su gravedad, pueden estar dentro sin romperse. La Estación Espacial está muy dentro del límite de Roche de la Tierra y no le pasa nada: la sujetan sus tornillos, no su gravedad.
+
+**Ejercicios**
+
+1. Calcula el límite de Roche de la Tierra para una luna como la nuestra (densidades: Tierra, $5{,}51\ \text{g/cm}^3$; Luna, $3{,}34\ \text{g/cm}^3$; radio de la Tierra, 6371 km). ¿Cuántas veces más lejos está la Luna real?
+2. Saturno tiene un radio de 58 232 km y una densidad media de $0{,}687\ \text{g/cm}^3$. Calcula su límite de Roche para partículas de hielo de $0{,}9\ \text{g/cm}^3$. Sus anillos principales acaban a unos 137 000 km del centro.
+3. Calcula la diferencia de aceleración de marea entre los extremos de la Estación Espacial, de unos 100 m, a 6771 km del centro de la Tierra ($GM = 3{,}986 \times 10^{14}\ \text{m}^3/\text{s}^2$). Compárala con $g$.
+
+<details>
+<summary>Soluciones</summary>
+
+1. $2{,}44 \cdot 6371 \cdot (5{,}51/3{,}34)^{1/3} = 2{,}44 \cdot 6371 \cdot 1{,}18 \approx$ **18 400 km**. La Luna está unas **21 veces** más lejos. Con la estimación sencilla salen unos 9500 km.
+2. $2{,}44 \cdot 58\,232 \cdot (0{,}687/0{,}9)^{1/3} = 2{,}44 \cdot 58\,232 \cdot 0{,}914 \approx$ **130 000 km**. Los anillos acaban muy cerca de ese límite: prácticamente todo el material está dentro. (Si las partículas son más porosas, de menor densidad, el límite se aleja.)
+3. Con $r = 50$ m desde el centro de la estación: $2GMr/d^3 = 2 \cdot 3{,}986 \times 10^{14} \cdot 50/(6{,}771 \times 10^6)^3 \approx$ **$1{,}3 \times 10^{-4}\ \text{m/s}^2$**, unas 80 000 veces menos que $g$. Para su estructura es insignificante.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

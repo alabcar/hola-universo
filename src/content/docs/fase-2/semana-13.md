@@ -159,6 +159,33 @@ El cuaderno de la semana 13:
 - **El trasfondo histórico.** Explicar el bucle sin mover la Tierra exigía epiciclos. Con el Sol en el centro, el bucle sale solo. Fue uno de los argumentos más fuertes a favor del modelo de Copérnico.
 - **Las herramientas.** El seno y el coseno como coordenadas en la circunferencia, válidos para cualquier ángulo; la posición $(r\cos\theta, r\sin\theta)$; la velocidad angular $\omega = 2\pi/T$ y la relación $v = r\omega$; y la fórmula del periodo sinódico, $1/S = 1/T_1 - 1/T_2$.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Cuánto retrocede un planeta.** En la sesión 3 has visto por qué Marte retrocede en el cielo cuando la Tierra lo adelanta. Con la velocidad orbital de la sesión 2 se puede calcular a qué ritmo. En la **oposición**, el Sol, la Tierra y Marte están alineados, y los dos planetas se mueven en el mismo sentido, perpendiculares a la línea que los une. Con órbitas circulares, la Tierra va a $v_\text{T} = 29{,}8$ km/s y Marte a $v_\text{M} = 24{,}1$ km/s. Vista desde la Tierra, Marte se desplaza de lado a la velocidad relativa $v_\text{M} - v_\text{T} = -5{,}7$ km/s, a una distancia $r_\text{M} - r_\text{T} = 0{,}524$ ua. Su ritmo angular es la velocidad de lado dividida por la distancia (la misma idea que el tamaño angular de la semana 2, pero con ritmos):
+
+$$\omega = \frac{v_\text{M} - v_\text{T}}{r_\text{M} - r_\text{T}} = \frac{-5{,}7\ \text{km/s}}{7{,}84 \times 10^{7}\ \text{km}} \approx -7{,}3 \times 10^{-8}\ \text{rad/s} \approx -0{,}36^\circ\ \text{por día}.$$
+
+El signo negativo significa que se mueve hacia el oeste respecto a las estrellas: **retrocede**, unos dos tercios del diámetro de la Luna cada día. En la **conjunción**, con Marte al otro lado del Sol, las velocidades se suman y las distancias también: $(24{,}1 + 29{,}8)/(1{,}524 + 1)$ ua da unos $0{,}7^\circ$ por día hacia el **este**.
+
+Como en órbitas circulares la velocidad disminuye al alejarse del Sol, todos los planetas exteriores van más despacio que la Tierra y todos tienen su bucle retrógrado en la oposición. Cuanto más lejos, más lento es su retroceso, porque su velocidad se parece menos a la de la Tierra pero la distancia crece mucho más.
+
+**Ejercicios**
+
+1. Calcula el ritmo de retroceso de Júpiter en la oposición ($v = 13{,}1$ km/s, $r = 5{,}20$ ua).
+2. Venus va a 35,0 km/s a 0,723 ua del Sol. En la **conjunción inferior**, cuando pasa entre la Tierra y el Sol, ¿a qué ritmo y en qué sentido se mueve en el cielo? Pista: Venus adelanta a la Tierra por el lado del Sol; dibújalo.
+3. Durante cuántos días, más o menos, tendría que retroceder Marte a $0{,}36^\circ$ diarios para recorrer los $15^\circ$ que suele medir su bucle? (El ritmo real no es constante: es máximo en la oposición y se anula en los extremos del bucle.)
+
+<details>
+<summary>Soluciones</summary>
+
+1. $(13{,}1 - 29{,}8)\ \text{km/s} / (4{,}20 \cdot 1{,}496 \times 10^8\ \text{km}) \approx -2{,}7 \times 10^{-8}$ rad/s, unos **−0,13° por día**.
+2. La velocidad relativa es $35{,}0 - 29{,}8 = 5{,}2$ km/s, a $1 - 0{,}723 = 0{,}277$ ua: $5{,}2/(4{,}14 \times 10^7) \approx 1{,}26 \times 10^{-7}$ rad/s, unos **0,6° por día**. Como Venus está entre la Tierra y el Sol y avanza más deprisa, desde la Tierra se ve moverse **hacia el oeste**: los planetas interiores retroceden en la conjunción inferior.
+3. $15/0{,}36 \approx 42$ días a ritmo máximo. Como el ritmo es menor fuera de la oposición, el bucle real dura bastante más, unos dos meses y medio.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

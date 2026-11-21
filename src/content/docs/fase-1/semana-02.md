@@ -167,6 +167,49 @@ La fórmula exacta usa la función arcotangente, que verás en las semanas 6 y 7
 - **La causa.** El tamaño aparente depende solo del cociente entre tamaño y distancia, y como las distancias varían a lo largo de órbitas elípticas, también varía el ángulo.
 - **Las herramientas.** Qué es un ángulo; grados, minutos y segundos de arco y su origen en base 60; el número $\pi$; el radián y la relación $s = r\theta$; la aproximación $\theta \approx d/D$ y cuándo vale; y la mano como instrumento de medida calibrado.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar. La parte de los casquetes usa el coseno, que verás en la semana 7.
+
+**Medir trozos de cielo.** Un ángulo dice cuánto se abre algo en una dirección. Pero la Luna, una constelación o el campo de unos prismáticos ocupan un **trozo** de cielo, con anchura y altura. Para medirlo hace falta el **ángulo sólido**. La idea es la misma que la del radián de la sesión 2: si el radián es la longitud del arco dividida por el radio, el ángulo sólido es el **área** que el objeto tapa sobre una esfera centrada en ti, dividida por el **radio al cuadrado**:
+
+$$\Omega = \frac{\text{área sobre la esfera}}{r^2}.$$
+
+Su unidad es el **estereorradián** (sr). Como la superficie de una esfera es $4\pi r^2$, el cielo completo, en todas las direcciones, mide $4\pi \approx 12{,}57$ sr, y el hemisferio que ves sobre el horizonte, $2\pi$.
+
+**Grados cuadrados.** En astronomía se usa mucho el **grado cuadrado**, un cuadradito de cielo de 1° × 1°. Como 1 rad = $180^\circ/\pi \approx 57{,}3^\circ$, un estereorradián equivale a $(180/\pi)^2 \approx 3283$ grados cuadrados, y el cielo entero a
+
+$$4\pi\left(\frac{180}{\pi}\right)^2 \approx 41\,253 \text{ grados cuadrados}.$$
+
+Para un disco pequeño de radio angular $\theta$, el ángulo sólido es casi el área de un círculo plano: $\Omega \approx \pi\theta^2$. La Luna, con $\theta \approx 0{,}25^\circ$, ocupa $\pi \cdot 0{,}25^2 \approx 0{,}196$ grados cuadrados: harían falta unas **210 000 lunas llenas** para cubrir el cielo entero.
+
+**Casquetes y el cilindro de Arquímedes.** Un **casquete** es la parte de la esfera que queda dentro de un círculo de radio angular $\theta$ alrededor de un punto; por ejemplo, el cielo que ves por encima de cierta altura. Su ángulo sólido es
+
+$$\Omega = 2\pi\,(1 - \cos\theta).$$
+
+La razón la encontró Arquímedes en el siglo III a. C. Mete una esfera de radio $r$ en un cilindro que la abraza justo, y corta los dos con dos planos horizontales separados una altura $\Delta z$: la franja de esfera y la de cilindro tienen **la misma área**, $2\pi r\,\Delta z$, estén donde estén los cortes. Cerca del ecuador la franja de esfera es casi vertical pero estrecha; cerca del polo es más inclinada (y más ancha a lo largo de la superficie) pero da una vuelta más corta, y las dos cosas se compensan exactamente. El casquete tiene una altura $r(1 - \cos\theta)$, así que su área es $2\pi r^2(1 - \cos\theta)$. Con $\theta = 180^\circ$ sale $4\pi r^2$, la esfera entera, como debe ser.
+
+Una consecuencia útil al observar: el cielo por encima de 30° de altura es un casquete de radio $60^\circ$ alrededor del cénit, y $2\pi(1 - \cos 60^\circ) = \pi$ sr, **la mitad** del hemisferio visible. La franja que va del horizonte a 30° de altura, la que más sufre la bruma y la contaminación lumínica, es la otra mitad.
+
+:::note[De dónde viene la palabra]
+**Estereorradián** une el griego *stereós*, «sólido, con cuerpo» (como en estéreo, el sonido con volumen, o en estereoscopio), y la palabra radián. Es el radián de las superficies.
+:::
+
+**Ejercicios**
+
+1. Unos prismáticos 8×30 tienen un campo de unos 7°. ¿Qué ángulo sólido abarcan, en grados cuadrados? ¿Cuántos campos así hacen falta, como mínimo, para recorrer todo el cielo visible?
+2. ¿Qué fracción del hemisferio visible está a más de 60° de altura?
+3. Comprueba que, para $\theta$ pequeño, la fórmula del casquete da $\Omega \approx \pi\theta^2$. Pista: para ángulos pequeños en radianes, $\cos\theta \approx 1 - \theta^2/2$.
+
+<details>
+<summary>Soluciones</summary>
+
+1. Radio 3,5°: $\Omega \approx \pi \cdot 3{,}5^2 \approx$ **38 grados cuadrados**. El hemisferio visible tiene $41\,253/2 \approx 20\,600$, así que hacen falta al menos unos **540 campos**; en la práctica más, porque los círculos no encajan sin dejar huecos.
+2. Es un casquete de radio 30° alrededor del cénit: $2\pi(1 - \cos 30^\circ) = 2\pi \cdot 0{,}134$. Dividido por $2\pi$: **13,4 %**. Lo que está muy alto es poco cielo.
+3. $2\pi\big(1 - (1 - \theta^2/2)\big) = 2\pi \cdot \theta^2/2 = \pi\theta^2$.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

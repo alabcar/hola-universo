@@ -10,7 +10,7 @@ sidebar:
 
 Entender por qué los cuerpos del Sistema Solar se mueven como lo hacen. La fase recorre el mismo camino que la historia de la astronomía: empieza con lo que se ve en el cielo (planetas que avanzan y retroceden), sigue con las leyes que lo describen (Kepler), continúa con la fuerza que lo causa (la gravitación de Newton) y termina con las herramientas para calcularlo en cualquier situación, hasta predecir dónde estará Marte con un programa propio.
 
-Como en la fase 1, cada semana parte de una pregunta del cielo y estudia solo las matemáticas y la física que hacen falta para responderla. En esta fase las explicaciones empiezan desde cero en cada tema y cuentan de dónde vienen las palabras, porque entender el origen de un término suele ayudar a entender la idea.
+Como en la fase 1, cada semana parte de una pregunta del cielo y estudia solo las matemáticas y la física que hacen falta para responderla. En esta fase las explicaciones empiezan desde cero en cada tema y cuentan de dónde vienen las palabras, porque entender el origen de un término suele ayudar a entender la idea. Cada semana tiene además un apartado **Para ir más lejos (opcional)**, con matemáticas más avanzadas y ejercicios resueltos, para cuando quieras volver a ella y profundizar.
 
 ## Qué serás capaz de hacer al terminar
 
@@ -40,20 +40,20 @@ Como en la fase 1, cada semana parte de una pregunta del cielo y estudia solo la
 
 ## Mapa de la fase
 
-| Semana | Matemáticas | Física | Proyecto en Python |
-|---|---|---|---|
-| 13 | Seno y coseno en la circunferencia, movimiento circular | Velocidad angular, periodo sinódico | Marte visto desde la Tierra |
-| 14 | La elipse: ejes, focos, excentricidad | Primera y segunda leyes de Kepler | Elipses y áreas barridas |
-| 15 | Potencias y logaritmos | Tercera ley de Kepler | Kepler con datos de la NASA |
-| 16 | Vectores, inverso del cuadrado | Gravitación universal | Fuerzas entre cuerpos |
-| 17 | Despejar, raíces | Velocidad orbital y de escape | El cañón de Newton |
-| 18 | Sistemas de ecuaciones | Energía orbital, transferencia de Hohmann | Viaje a Marte |
-| 19 | Matrices y rotaciones | Cambio de sistema de referencia | Coordenadas eclípticas |
-| 20 | Medias ponderadas | Centro de masas, dos cuerpos | Simular dos cuerpos |
-| 21 | Aproximaciones, órdenes de magnitud | Fuerzas de marea | Campo de mareas, vivas y muertas |
-| 22 | Notación científica, unidades | Masa a partir de Kepler | La masa de Júpiter |
-| 23 | Ecuaciones diferenciales | Perturbaciones, resonancias, caos | Tres cuerpos y huecos de Kirkwood |
-| 24 | Repaso de la fase | Integración numérica de órbitas | Predicción de Marte |
+| Semana | Matemáticas | Física | Proyecto en Python | Para ir más lejos |
+|---|---|---|---|---|
+| 13 | Seno y coseno en la circunferencia, movimiento circular | Velocidad angular, periodo sinódico | Marte visto desde la Tierra | Ritmo del movimiento retrógrado |
+| 14 | La elipse: ejes, focos, excentricidad | Primera y segunda leyes de Kepler | Elipses y áreas barridas | La ecuación de Kepler |
+| 15 | Potencias y logaritmos | Tercera ley de Kepler | Kepler con datos de la NASA | Análisis dimensional |
+| 16 | Vectores, inverso del cuadrado | Gravitación universal | Fuerzas entre cuerpos | Teorema de la cáscara, túnel por la Tierra |
+| 17 | Despejar, raíces | Velocidad orbital y de escape | El cañón de Newton | La paradoja del satélite que frena |
+| 18 | Sistemas de ecuaciones | Energía orbital, transferencia de Hohmann | Viaje a Marte | Asistencia gravitatoria |
+| 19 | Matrices y rotaciones | Cambio de sistema de referencia | Coordenadas eclípticas | Elementos orbitales y ángulos de Euler |
+| 20 | Medias ponderadas | Centro de masas, dos cuerpos | Simular dos cuerpos | Masa reducida |
+| 21 | Aproximaciones, órdenes de magnitud | Fuerzas de marea | Campo de mareas, vivas y muertas | El límite de Roche |
+| 22 | Notación científica, unidades | Masa a partir de Kepler | La masa de Júpiter | La densidad de la Tierra |
+| 23 | Ecuaciones diferenciales | Perturbaciones, resonancias, caos | Tres cuerpos y huecos de Kirkwood | Oscilador amortiguado y forzado |
+| 24 | Repaso de la fase | Integración numérica de órbitas | Predicción de Marte | Tiempo de Lyapunov |
 
 **Material.** Basta con Stellarium y unos prismáticos para las semanas 20 y 22 (si no tienes, Stellarium sustituye la observación). Para las tablas de mareas de la semana 21 hace falta acceso a internet.
 

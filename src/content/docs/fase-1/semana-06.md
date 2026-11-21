@@ -165,6 +165,39 @@ El cuaderno de la semana 6:
 - **La causa.** Como la Tierra es esférica, la vertical de cada lugar apunta a una dirección distinta, y los rayos del Sol, casi paralelos, forman con ellas ángulos diferentes. Por los ángulos alternos internos, el ángulo de la sombra es el mismo que el que forman las verticales en el centro de la Tierra.
 - **Las herramientas.** La suma de los ángulos de un triángulo, rectas paralelas y ángulos alternos internos, triángulos semejantes, la tangente y su inversa, la regla de tres entre arcos y ángulos, y el análisis de cómo un error en una medida se propaga al resultado.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar. Usa el teorema de Pitágoras, que verás en la semana 7.
+
+**Hasta dónde llega la vista.** Si tus ojos están a una altura $h$ sobre el mar, la línea de tu mirada que roza el horizonte es tangente a la Tierra: forma un ángulo recto con el radio en el punto donde la toca. Tienes un triángulo rectángulo con catetos $R$ (el radio de la Tierra) y $d$ (la distancia al horizonte), e hipotenusa $R + h$. Por Pitágoras, $d^2 = (R + h)^2 - R^2 = 2Rh + h^2$, y como $h$ es diminuto comparado con $R$, el término $h^2$ no cuenta:
+
+$$d \approx \sqrt{2Rh}.$$
+
+Desde 1,7 m de altura, en la orilla, el horizonte está a $\sqrt{2 \cdot 6{,}371 \times 10^6 \cdot 1{,}7} \approx 4{,}7$ km. La refracción de la atmósfera dobla un poco la luz hacia abajo y lo aleja en torno a un 8 %.
+
+**Medir la Tierra con un reloj: las dos puestas de Sol.** Este método no necesita viajar ni medir sombras. Túmbate en una playa con el horizonte del mar despejado y mira cómo se pone el Sol. En el instante en que desaparece, ponte de pie y pon en marcha un cronómetro: desde tus ojos, a una altura $h$ mayor, el Sol vuelve a estar a la vista, porque tu horizonte está ahora un poco más abajo. Para el cronómetro cuando se ponga por segunda vez. Has medido un tiempo $\Delta t$.
+
+Al subir a la altura $h$, tu horizonte baja un ángulo $\theta$, el mismo que forman los radios que van a tus pies y al punto del horizonte. En el triángulo de antes, $\cos\theta = R/(R + h)$. Para ángulos pequeños, en radianes, $\cos\theta \approx 1 - \theta^2/2$ y $R/(R + h) \approx 1 - h/R$, así que
+
+$$\theta^2 \approx \frac{2h}{R} \quad\Longrightarrow\quad R \approx \frac{2h}{\theta^2}.$$
+
+El ángulo $\theta$ es lo que ha bajado el Sol en $\Delta t$. En el ecuador, en los equinoccios, el Sol baja en vertical a $360^\circ$ por día, $15''$ por segundo. Con $h = 1{,}7$ m, la segunda puesta llega unos 10 segundos después. A otras latitudes el Sol baja inclinado, más despacio, y el tiempo es mayor: hay que multiplicar el ritmo de bajada por $\cos\varphi$ en los equinoccios (a 40° de latitud, unos 13 segundos).
+
+**Ejercicios**
+
+1. ¿A qué distancia está el horizonte desde lo alto de un faro de 30 m? ¿Y desde un monte de 3000 m?
+2. Con $h = 1{,}7$ m y $\Delta t = 10$ s en el ecuador, calcula $\theta$ en radianes y el radio de la Tierra.
+3. Si en el ejercicio anterior el cronómetro marca 11 s en vez de 10, ¿qué radio sale? ¿Qué te dice sobre la precisión del método?
+
+<details>
+<summary>Soluciones</summary>
+
+1. Desde 30 m: $\sqrt{2 \cdot 6{,}371 \times 10^6 \cdot 30} \approx$ **19,6 km**. Desde 3000 m: $\approx$ **196 km** (sin contar la refracción ni que el terreno no es llano).
+2. $\theta = 10 \cdot 15'' = 150'' = 150/206\,265 \approx 7{,}27 \times 10^{-4}$ rad. $R \approx 2 \cdot 1{,}7/(7{,}27 \times 10^{-4})^2 \approx$ **6,4 × 10⁶ m**, unos 6400 km.
+3. $R$ va con $1/\Delta t^2$: con 11 s sale $6400/1{,}1^2 \approx$ **5300 km**, un 17 % menos. Un error del 10 % en el tiempo se convierte en uno del 20 % en el radio. El método es sencillo y bonito, pero hay que medir con mucho cuidado, y la refracción, que cambia con la temperatura del aire sobre el mar, lo complica.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

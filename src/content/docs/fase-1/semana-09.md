@@ -153,6 +153,41 @@ El cuaderno de la semana 9:
 - **La causa.** Los cuerpos tienen inercia, y los frenos de la vida diaria (rozamiento, resistencia del aire) ocultan esa propiedad. Por eso la física de Aristóteles parecía correcta durante tantos siglos.
 - **Las herramientas.** Funciones cuadráticas, su vértice, la fórmula para resolverlas (y de dónde sale) y el discriminante; vectores con sus componentes y su suma; y el método de Euler con la dependencia del error con el paso.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Caer con aire.** La segunda ley de Newton no solo explica la caída libre: también explica por qué, en el aire, las cosas dejan de acelerar. Un cuerpo que cae recibe dos fuerzas: su peso, $mg$, hacia abajo, y la **resistencia del aire**, hacia arriba. Para objetos de tamaño cotidiano a velocidades normales, la resistencia vale aproximadamente
+
+$$F_\text{aire} = \tfrac{1}{2}\,\rho\,C\,A\,v^2,$$
+
+donde $\rho$ es la densidad del aire (unos $1{,}2\ \text{kg/m}^3$ a nivel del mar), $A$ el área que el cuerpo presenta de frente, $C$ un número que depende de la forma (en torno a 0,5 para una esfera y cerca de 1 para un cuerpo plano) y $v$ la velocidad. La segunda ley queda
+
+$$m\,a = m\,g - \tfrac{1}{2}\,\rho\,C\,A\,v^2.$$
+
+Al principio, con $v = 0$, la aceleración es $g$. A medida que la velocidad crece, la resistencia crece con su cuadrado y la aceleración disminuye. Cuando la resistencia iguala al peso, la aceleración es cero y la velocidad ya no cambia: es la **velocidad límite**,
+
+$$v_\text{lím} = \sqrt{\frac{2\,m\,g}{\rho\,C\,A}}.$$
+
+Para cuerpos del mismo material y la misma forma, la masa crece con el cubo del tamaño y el área con el cuadrado, así que la velocidad límite crece con la raíz del tamaño: las gotas grandes caen más deprisa que las pequeñas, y el polvo flota. (Para gotas o partículas muy pequeñas, la resistencia deja de ir con $v^2$ y pasa a ir con $v$; la fórmula ya no vale.)
+
+**Aterrizar en Marte.** En la superficie de Marte, la gravedad es $3{,}71\ \text{m/s}^2$ y la densidad del aire, unos $0{,}020\ \text{kg/m}^3$, sesenta veces menos que en la Tierra. Con el mismo paracaídas, la velocidad límite es unas cinco veces mayor. Por eso ninguna sonda se ha posado en Marte solo con paracaídas: después hacen falta cohetes de frenado, bolsas de aire o, en el caso de los rovers *Curiosity* (2012) y *Perseverance* (2021), una «grúa» con cohetes que los bajó con cables.
+
+**Ejercicios**
+
+1. Un paracaidista de 80 kg en caída libre, con los brazos abiertos, tiene $C\,A \approx 0{,}5\ \text{m}^2$. Calcula su velocidad límite en m/s y en km/h.
+2. Una gota de lluvia de 2 mm de diámetro tiene una masa de $4{,}2 \times 10^{-6}$ kg, un área de $3{,}1 \times 10^{-6}\ \text{m}^2$ y $C \approx 0{,}5$. ¿A qué velocidad cae? ¿Y una de 4 mm, según la regla de la raíz?
+3. Con el paracaídas abierto, el paracaidista tiene $C\,A \approx 40\ \text{m}^2$. ¿A qué velocidad llega al suelo? ¿Y en Marte, con el mismo paracaídas?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $v = \sqrt{2 \cdot 80 \cdot 9{,}81/(1{,}2 \cdot 0{,}5)} = \sqrt{2616} \approx$ **51 m/s**, unos **185 km/h**.
+2. $v = \sqrt{2 \cdot 4{,}2 \times 10^{-6} \cdot 9{,}81/(1{,}2 \cdot 0{,}5 \cdot 3{,}1 \times 10^{-6})} \approx$ **6,6 m/s**. Con el doble de diámetro, $\sqrt{2}$ veces más: unos **9,3 m/s**. Las medidas dan algo menos, unos 8,8 m/s, porque las gotas grandes se aplastan al caer y frenan más.
+3. En la Tierra, $v = \sqrt{2 \cdot 80 \cdot 9{,}81/(1{,}2 \cdot 40)} \approx$ **5,7 m/s**, como saltar desde 1,7 m. En Marte, $v = \sqrt{2 \cdot 80 \cdot 3{,}71/(0{,}020 \cdot 40)} \approx$ **27 m/s**, casi 100 km/h.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

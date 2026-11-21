@@ -142,6 +142,35 @@ La simulación por pasos es la técnica que usarás en las fases siguientes para
 - **La causa.** La velocidad se define como el cambio de posición entre el tiempo, y un cambio de velocidad (en valor o en dirección) se llama aceleración. Un movimiento sin aceleración es indistinguible del reposo.
 - **Las herramientas.** Ecuaciones lineales y la regla de la balanza, despeje de fórmulas, conversión de unidades con factores que valen 1, las ecuaciones del movimiento uniforme y uniformemente acelerado (con su deducción), y la simulación paso a paso con su error.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Quitar el tiempo de las ecuaciones.** Con aceleración constante tienes dos fórmulas: $v = v_0 + a\,t$ y $\Delta x = \tfrac{1}{2}(v_0 + v)\,t$ (la velocidad media por el tiempo, sesión 3). Muchas veces no te interesa el tiempo, sino la relación entre velocidad y distancia: cuánto necesita un coche para frenar, a qué velocidad llega al suelo algo que cae. Despeja $t$ de la primera, $t = (v - v_0)/a$, y sustitúyelo en la segunda:
+
+$$\Delta x = \frac{(v_0 + v)(v - v_0)}{2a} = \frac{v^2 - v_0^2}{2a} \quad\Longrightarrow\quad v^2 = v_0^2 + 2a\,\Delta x.$$
+
+Una consecuencia práctica: la distancia de frenada crece con el **cuadrado** de la velocidad. A doble velocidad, cuatro veces más metros.
+
+**La ley de los números impares.** Si algo parte del reposo con aceleración constante, $x = \tfrac{1}{2}a\,t^2$. Al cabo de 1, 2, 3 y 4 segundos ha recorrido 1, 4, 9 y 16 veces $\tfrac{1}{2}a$. En cada segundo sucesivo recorre la diferencia: 1, 3, 5, 7… Los números impares. Galileo lo comprobó en el siglo XVII con bolas que rodaban por planos inclinados, donde el movimiento es más lento y se puede medir con relojes de agua, y lo publicó en 1638 en sus *Discursos sobre dos nuevas ciencias*.
+
+**Un martillo y una pluma en la Luna.** Galileo defendió que, sin aire, todos los cuerpos caen con la misma aceleración, sea cual sea su masa. El 2 de agosto de 1971, el astronauta David Scott, de la misión Apolo 15, lo comprobó en directo en la televisión: soltó a la vez un martillo y una pluma de halcón desde la altura de sus hombros, y llegaron juntos al suelo lunar. En la Luna, $g = 1{,}62\ \text{m/s}^2$, unas seis veces menos que en la Tierra.
+
+**Ejercicios**
+
+1. Un coche va a 100 km/h y frena con una aceleración de $-8\ \text{m/s}^2$. ¿Cuántos metros necesita para pararse? ¿Y si va a 50 km/h?
+2. En la Luna, ¿cuánto tarda en caer algo desde 1,5 m? ¿A qué velocidad llega al suelo? Compáralo con la Tierra.
+3. Una piedra cae desde el reposo. ¿Cuántos metros recorre durante el quinto segundo de caída?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $100$ km/h $= 27{,}8$ m/s. Con $v = 0$: $\Delta x = v_0^2/(2 \cdot 8) = 772/16 \approx$ **48 m** (sin contar el tiempo de reacción). A 50 km/h, la cuarta parte: unos **12 m**.
+2. $t = \sqrt{2h/g} = \sqrt{3/1{,}62} \approx$ **1,36 s**, y $v = \sqrt{2gh} = \sqrt{2 \cdot 1{,}62 \cdot 1{,}5} \approx$ **2,2 m/s**. En la Tierra, 0,55 s y 5,4 m/s.
+3. El quinto número impar es 9: recorre $9 \cdot \tfrac{1}{2} \cdot 9{,}81 \approx$ **44 m** (de 78,5 m a 122,6 m).
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

@@ -135,6 +135,43 @@ El cuaderno de la semana 20:
 - **La física.** La tercera ley de Kepler exacta depende de la suma de las masas: $T^2 = 4\pi^2 a^3 / (G(m_1 + m_2))$. Con ella se pesan las estrellas dobles.
 - **Las herramientas.** Media ponderada, ley de la palanca, centro de masas con vectores y la descomposición de las posiciones en centro de masas más posición relativa.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Por qué la masa total.** En la sesión 3 has visto que la tercera ley de Kepler exacta lleva la suma de las masas. Se puede deducir en tres líneas. Con $\vec{r} = \vec{r}_2 - \vec{r}_1$, el vector que va del cuerpo 1 al 2, la ley de Newton da las aceleraciones de cada uno:
+
+$$\vec{a}_1 = +\frac{G m_2}{r^3}\,\vec{r}, \qquad \vec{a}_2 = -\frac{G m_1}{r^3}\,\vec{r}.$$
+
+El cuerpo 1 cae hacia el 2 y el 2 hacia el 1. La aceleración de la separación es la diferencia:
+
+$$\ddot{\vec{r}} = \vec{a}_2 - \vec{a}_1 = -\frac{G\,(m_1 + m_2)}{r^3}\,\vec{r}.$$
+
+Es exactamente la ecuación de un cuerpo que gira alrededor de una masa **fija** $m_1 + m_2$. Por eso la separación describe una elipse con las leyes de Kepler, y la tercera ley lleva la masa total: $T^2 = 4\pi^2 a^3/\big(G\,(m_1 + m_2)\big)$.
+
+**La masa reducida.** Si multiplicas esa ecuación por
+
+$$\mu = \frac{m_1\,m_2}{m_1 + m_2},$$
+
+queda $\mu\,\ddot{\vec{r}} = -G m_1 m_2\,\vec{r}/r^3$: la fuerza real entre los dos cuerpos actuando sobre una masa ficticia $\mu$, la **masa reducida**. Además, la energía cinética de los dos cuerpos respecto al centro de masas resulta ser $\tfrac{1}{2}\mu\,v^2$, con $v$ la velocidad relativa. Un problema de dos cuerpos se convierte así en uno de **un solo** cuerpo, de masa $\mu$, que gira alrededor de un centro fijo. Si $m_2$ es mucho menor que $m_1$, $\mu \approx m_2$; si no, $\mu$ es menor que las dos masas.
+
+El mismo truco sirve en los átomos. En el hidrógeno, el electrón y el núcleo giran alrededor de su centro de masas, y la energía de los niveles (semana 32) depende de la masa reducida. En el **deuterio**, cuyo núcleo pesa el doble, $\mu$ es un poco mayor y las líneas del espectro se desplazan muy ligeramente. Buscando ese desplazamiento, Harold Urey descubrió el deuterio en 1931.
+
+**Ejercicios**
+
+1. Calcula el periodo de la Luna ($a = 384\,400$ km) usando solo la masa de la Tierra, $5{,}972 \times 10^{24}$ kg, y usando la suma con la de la Luna, $7{,}342 \times 10^{22}$ kg. Compara con el mes sidéreo, 27,32 días.
+2. Plutón ($1{,}303 \times 10^{22}$ kg, radio 1188 km) y su luna Caronte ($1{,}586 \times 10^{21}$ kg) están separados 19 596 km. ¿Dónde está su centro de masas?
+3. ¿Cuánto vale la masa reducida del sistema Tierra-Luna, en masas lunares?
+
+<details>
+<summary>Soluciones</summary>
+
+1. Solo con la Tierra: $T = 2\pi\sqrt{a^3/(GM)} \approx$ **27,45 días**. Con la suma: **27,29 días**, mucho más cerca del valor medido. La pequeña diferencia que queda se debe sobre todo al tirón del Sol (semana 23).
+2. A $19\,596 \cdot 1{,}586/(13{,}03 + 1{,}586) \approx$ **2126 km** del centro de Plutón: **fuera** de Plutón, cuyo radio es 1188 km. Los dos giran alrededor de un punto del espacio vacío entre ellos; por eso a veces se habla de un planeta doble.
+3. $\mu = m_\text{L}/(1 + m_\text{L}/m_\text{T}) = m_\text{L}/1{,}0123 \approx$ **0,988 masas lunares**.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

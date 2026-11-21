@@ -150,6 +150,43 @@ El cuaderno de la semana 19:
 - **Lo que se conserva.** Las distancias, los ángulos y las leyes físicas son los mismos en todos los sistemas. Se elige el sistema que hace el problema más sencillo.
 - **Las herramientas.** Matrices, el producto de matriz por vector, el significado de las columnas de una matriz, la matriz de rotación en el plano y en el espacio, el producto de matrices como composición de transformaciones y la inversa de una rotación.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**El orden importa.** Al multiplicar números da igual el orden: $2 \cdot 3 = 3 \cdot 2$. Con matrices, no. Haz la prueba con un libro sobre la mesa: gíralo 90° alrededor de un eje vertical y después 90° alrededor de un eje horizontal que apunte hacia ti. Vuelve a la posición inicial y haz los mismos giros en el orden contrario. El libro acaba en posiciones distintas. En el plano, todas las rotaciones son alrededor del mismo eje y el orden no importa; en el espacio, sí. En lenguaje de matrices: en general, $A\,B \neq B\,A$.
+
+Para verlo con números, usa matrices que giran **vectores** (no ejes, como en la sesión 2; por eso los signos de los senos están cambiados respecto a $R_x(\varepsilon)$):
+
+$$R_z(\theta) = \begin{pmatrix} \cos\theta & -\sin\theta & 0 \\ \sin\theta & \cos\theta & 0 \\ 0 & 0 & 1 \end{pmatrix}, \qquad R_x(\theta) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & \cos\theta & -\sin\theta \\ 0 & \sin\theta & \cos\theta \end{pmatrix}.$$
+
+**Colocar una órbita en el espacio.** En la semana 14 describiste una órbita dentro de su plano, con el perihelio en el eje $x$. Para colocarla en el Sistema Solar hacen falta tres ángulos más:
+
+- la **longitud del nodo ascendente**, $\Omega$ (omega mayúscula): el ángulo, medido sobre la eclíptica desde el punto Aries, del punto donde la órbita cruza la eclíptica hacia el norte;
+- la **inclinación**, $i$: el ángulo entre el plano de la órbita y el de la eclíptica;
+- el **argumento del perihelio**, $\omega$ (omega minúscula): el ángulo, dentro del plano de la órbita, entre el nodo ascendente y el perihelio.
+
+Con el semieje mayor, la excentricidad y el instante del paso por el perihelio, son los seis **elementos orbitales**. Si $\vec{r}_\text{órb} = (r\cos\nu,\ r\sin\nu,\ 0)$ es la posición en el plano de la órbita, las coordenadas eclípticas son
+
+$$\vec{r}_\text{ecl} = R_z(\Omega)\,R_x(i)\,R_z(\omega)\,\vec{r}_\text{órb}.$$
+
+Se lee de derecha a izquierda: primero se gira la órbita dentro de su plano para poner el perihelio a un ángulo $\omega$ del nodo; después se inclina el plano un ángulo $i$ alrededor de la línea de los nodos (el eje $x$); por último se gira todo alrededor del eje de la eclíptica para llevar el nodo a su longitud $\Omega$. Estos tres giros encadenados se llaman **ángulos de Euler**, por Leonhard Euler, que los estudió en el siglo XVIII. En la semana 24 aparecerá la longitud del perihelio, $\varpi = \Omega + \omega$.
+
+**Ejercicios**
+
+1. Aplica al vector $(1, 0, 0)$ primero $R_z(90^\circ)$ y después $R_x(90^\circ)$. Repite en el orden contrario. ¿Coinciden?
+2. Una órbita tiene $\Omega = 0$, $i = 90^\circ$ y $\omega = 0$. ¿Dónde queda el punto con $\nu = 90^\circ$ y $r = 1$?
+3. Plutón tiene $i = 17{,}1^\circ$ y está ahora a unas 35 ua del Sol. ¿Cuánto puede alejarse, como mucho, del plano de la eclíptica a esa distancia?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $R_z(90^\circ)$ lleva $(1, 0, 0)$ a $(0, 1, 0)$, y $R_x(90^\circ)$ lleva este a $(0, 0, 1)$. En el orden contrario: $R_x(90^\circ)$ deja $(1, 0, 0)$ igual, y $R_z(90^\circ)$ lo lleva a $(0, 1, 0)$. Resultados **distintos**: $(0, 0, 1)$ y $(0, 1, 0)$.
+2. $\vec{r}_\text{órb} = (0, 1, 0)$. $R_z(0)$ no cambia nada; $R_x(90^\circ)$ lo lleva a $(0, 0, 1)$; $R_z(0)$, nada. Queda en $(0, 0, 1)$: **perpendicular a la eclíptica**, en dirección a su polo norte. La órbita es perpendicular al plano de los planetas.
+3. Como mucho, $r\sin i = 35 \sin 17{,}1^\circ \approx$ **10 ua**, si en ese momento está a 90° de los nodos.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

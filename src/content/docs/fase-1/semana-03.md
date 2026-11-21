@@ -141,6 +141,39 @@ El cuaderno de la semana 3:
 - **La causa.** La Tierra gira alrededor de un eje, que corta la esfera celeste en los polos celestes, y tu horizonte está inclinado respecto a ese eje según tu latitud.
 - **Las herramientas.** El plano cartesiano y las coordenadas, también sobre una esfera (latitud y longitud); conversión entre horas, minutos y grados; el valor absoluto; y la fórmula de la altura máxima de una estrella en función de su declinación y de tu latitud.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar. Usa el seno y el coseno, que verás en la semana 7.
+
+**La altura de un astro a cualquier hora.** En la sesión 3 has visto cuándo una estrella es circumpolar y cuánto sube como máximo. ¿Y a qué altura está en cualquier otro momento? Hace falta un ángulo más, el **ángulo horario**, $H$: cuánto ha girado el cielo desde que la estrella cruzó el meridiano. Vale $0$ en la culminación, crece 15° por hora y se suele dar en horas: $H = 3^\text{h}$ significa que la estrella culminó hace tres horas, y $H = -2^\text{h}$, que le faltan dos para culminar. Se calcula como $H = \text{TSL} - \alpha$, donde TSL es el **tiempo sidéreo local**, la ascensión recta que está cruzando el meridiano en ese momento (Stellarium lo muestra). Con tu latitud $\varphi$ y la declinación $\delta$ de la estrella, la altura $h$ cumple
+
+$$\sin h = \sin\varphi\,\sin\delta + \cos\varphi\,\cos\delta\,\cos H.$$
+
+**De dónde sale.** Une con arcos de círculo máximo tres puntos de la esfera celeste: el polo norte celeste, el cénit y la estrella. Es un **triángulo esférico**, con lados curvos. Sus lados miden $90^\circ - \varphi$ (del polo al cénit, porque el polo está a una altura igual a tu latitud), $90^\circ - \delta$ (del polo a la estrella) y $90^\circ - h$ (del cénit a la estrella), y el ángulo en el polo es justamente $H$. En un triángulo esférico se cumple el **teorema del coseno esférico**: para lados $a$, $b$, $c$ y el ángulo $C$ opuesto al lado $c$,
+
+$$\cos c = \cos a\,\cos b + \sin a\,\sin b\,\cos C.$$
+
+Poniendo los lados de nuestro triángulo y usando que $\cos(90^\circ - x) = \sin x$ y $\sin(90^\circ - x) = \cos x$ sale la fórmula de la altura. En la semana 19 verás otra forma de llegar a ella: girar un vector. Para triángulos muy pequeños comparados con la esfera, este teorema se convierte en el teorema del coseno de los triángulos planos, igual que una ciudad parece plana aunque esté sobre la Tierra.
+
+**Casos que ya conoces.** En la culminación, $H = 0$, $\cos H = 1$, y la fórmula queda $\sin h = \cos(\varphi - \delta)$, es decir, $h = 90^\circ - |\varphi - \delta|$: la altura máxima de la sesión 3. Para la Polar, con $\delta \approx 90^\circ$, $\cos\delta \approx 0$ y $\sin h = \sin\varphi$: su altura es tu latitud, a cualquier hora. Y si pones $h = 0$, despejas el ángulo horario de la salida y la puesta: $\cos H_0 = -\tan\varphi\,\tan\delta$, la fórmula de las horas de luz de «Para ir más lejos» de la semana 1.
+
+**Ejercicios**
+
+Usa $\varphi = 40^\circ$.
+
+1. ¿A qué altura culmina Sirio ($\delta = -16{,}72^\circ$)? ¿Cuántas horas pasa sobre el horizonte cada día?
+2. Vega tiene $\delta = +38{,}78^\circ$. ¿A qué altura está en la culminación? ¿Y tres horas después?
+3. ¿A qué altura culminaría Sirio vista desde 60° de latitud norte?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $h = 90^\circ - |40^\circ - (-16{,}72^\circ)| = 90^\circ - 56{,}72^\circ =$ **33,3°**. Para la salida y la puesta: $\cos H_0 = -\tan 40^\circ \cdot \tan(-16{,}72^\circ) = 0{,}8391 \cdot 0{,}3004 = 0{,}252$, así que $H_0 = 75{,}4^\circ$, unas 5,0 horas. Está sobre el horizonte unas **10 horas** (sidéreas) al día.
+2. En la culminación, $h = 90^\circ - |40^\circ - 38{,}78^\circ| =$ **88,8°**, casi en el cénit. Tres horas después, $H = 45^\circ$: $\sin h = \sin 40^\circ \sin 38{,}78^\circ + \cos 40^\circ \cos 38{,}78^\circ \cos 45^\circ = 0{,}6428 \cdot 0{,}6263 + 0{,}7660 \cdot 0{,}7796 \cdot 0{,}7071 = 0{,}4026 + 0{,}4223 = 0{,}825$, así que $h \approx$ **55,6°**.
+3. $h = 90^\circ - (60^\circ + 16{,}72^\circ) =$ **13,3°**: muy baja, en la zona de bruma del horizonte.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

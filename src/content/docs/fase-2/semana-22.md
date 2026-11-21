@@ -143,6 +143,35 @@ El cuaderno de la semana 22:
 - **El método.** El periodo se mide con un reloj; el tamaño de la órbita, con un ángulo y una distancia conocida. Es el mismo método con el que se pesan las estrellas y las galaxias.
 - **Las herramientas.** Notación científica para operar con números enormes y diminutos, conversión de unidades al Sistema Internacional antes de sustituir y comprobación de las unidades del resultado.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Pesar la Tierra sin órbitas.** En la sesión 3 has calculado masas a partir de órbitas. Para la Tierra hay un atajo: conocemos la gravedad en su superficie, $g = 9{,}81\ \text{m/s}^2$, y su radio. Como $g = GM/R^2$,
+
+$$M = \frac{g R^2}{G} = \frac{9{,}81 \cdot (6{,}371 \times 10^6)^2}{6{,}674 \times 10^{-11}} \approx 5{,}97 \times 10^{24}\ \text{kg}.$$
+
+Por eso la medida de $G$ de Cavendish (semana 16) fue en realidad la primera «pesada» de la Tierra. Cavendish no expresó su resultado como un valor de $G$, sino como la densidad media de la Tierra: 5,48 veces la del agua. Con el volumen de la semana 11, $1{,}083 \times 10^{21}\ \text{m}^3$, sale hoy $5510\ \text{kg/m}^3$.
+
+**Lo que revela una densidad.** Las rocas de la superficie tienen densidades de 2700 a 3300 kg/m³. Si la media de la Tierra es 5500, el interior tiene que ser mucho más denso que la superficie. Ese solo número ya dice que la Tierra tiene un **núcleo** pesado; hoy sabemos que es de hierro y níquel, con densidades de 10 000 a 13 000 kg/m³. El mismo razonamiento sirve para cualquier astro del que se conozcan la masa (por sus lunas o por las sondas que lo visitan) y el radio. Las densidades medias separan el Sistema Solar en familias: los planetas rocosos, de 3900 a 5500 kg/m³; la Luna, de 3340, poco más que sus rocas, con un núcleo pequeño; los gigantes de gas, Júpiter (1330) y Saturno (690), hechos sobre todo de hidrógeno y helio; y los gigantes de hielo, Urano y Neptuno (unos 1300 y 1600), con mucha agua, amoniaco y metano.
+
+**Una fuerza diminuta.** En el experimento de Cavendish, bolas de plomo de 158 kg atraían a bolas de 0,73 kg a unos 23 cm de distancia entre centros. La fuerza es $G \cdot 158 \cdot 0{,}73/0{,}23^2 \approx 1{,}5 \times 10^{-7}$ N, lo que pesan unos 15 microgramos, un grano de arena fina. Cavendish la midió por el giro de una varilla colgada de un hilo, observando desde fuera de la sala con un anteojo para que el calor de su cuerpo no moviera el aire.
+
+**Ejercicios**
+
+1. Calcula la densidad media de la Luna: masa $7{,}342 \times 10^{22}$ kg y radio 1737 km.
+2. Saturno tiene una masa de $5{,}683 \times 10^{26}$ kg y un radio medio de 58 232 km. Calcula su densidad media. ¿Qué tiene de curioso?
+3. Si la Tierra tuviera toda ella la densidad de las rocas de la superficie, 3000 kg/m³, con el mismo radio, ¿cuánto valdría $g$?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $V = \tfrac{4}{3}\pi\,(1{,}737 \times 10^6)^3 \approx 2{,}20 \times 10^{19}\ \text{m}^3$, y $\rho = 7{,}342 \times 10^{22}/2{,}20 \times 10^{19} \approx$ **3340 kg/m³**.
+2. $V = \tfrac{4}{3}\pi\,(5{,}8232 \times 10^7)^3 \approx 8{,}27 \times 10^{23}\ \text{m}^3$, y $\rho \approx$ **690 kg/m³**: **menos que el agua**. En una bañera lo bastante grande, flotaría.
+3. $g$ es proporcional a la densidad media para un mismo radio ($g = \tfrac{4}{3}\pi G\rho R$, semana 15): $9{,}81 \cdot 3000/5510 \approx$ **5,3 m/s²**.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

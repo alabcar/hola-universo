@@ -149,6 +149,49 @@ El cuaderno de la semana 10:
 - **La causa.** Aunque en un instante no se recorra distancia, la velocidad media sobre intervalos cada vez más pequeños se acerca a un valor concreto, y ese valor es lo que mide un velocímetro. Así se resuelve la paradoja de Zenón.
 - **Las herramientas.** Pendiente, secante y tangente; el límite como valor al que se acerca una expresión; la derivada como función; la regla de las potencias deducida para $x^2$ y $x^3$; las notaciones $f'$ y $dy/dx$; y la derivada numérica con su error.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar. Usa el seno y el coseno, que verás en la semana 7.
+
+**La derivada del seno.** Toma un ángulo $x$ en **radianes** y el punto correspondiente de la circunferencia de radio 1, a la altura $\sin x$. Si aumentas el ángulo un poquito, $h$, el punto avanza sobre la circunferencia un arco de longitud $h$ (eso es lo que significa medir en radianes), en dirección perpendicular al radio. De ese pequeño desplazamiento, la parte vertical es $h\cos x$. Así que $\sin(x + h) - \sin x \approx h\cos x$, y
+
+$$\frac{d}{dx}\sin x = \cos x, \qquad \frac{d}{dx}\cos x = -\sin x.$$
+
+Esto solo es así en radianes: en grados aparecería un molesto factor $\pi/180$. Es una de las razones por las que en cálculo siempre se usan radianes.
+
+**La regla de la cadena.** Muchas magnitudes dependen de otra que a su vez depende del tiempo. Si $y$ depende de $u$ y $u$ depende de $t$,
+
+$$\frac{dy}{dt} = \frac{dy}{du}\cdot\frac{du}{dt}.$$
+
+Piensa en engranajes: si la primera rueda gira tres veces más deprisa que la segunda, y la segunda dos veces más deprisa que la tercera, la primera gira seis veces más deprisa que la tercera. Los ritmos de cambio se multiplican. Por ejemplo, la derivada de $\sin(\omega t)$ es $\omega\cos(\omega t)$: la de fuera ($\cos$) por la de dentro ($\omega$). La regla se llama así porque encadena derivadas; la usarás mucho en la fase 3.
+
+**Cuánto se alarga el día.** Un modelo sencillo de la declinación del Sol, contando $t$ en días desde el equinoccio de marzo, es $\delta(t) = 23{,}44^\circ \sin(2\pi t/365{,}25)$. Con la regla de la cadena,
+
+$$\frac{d\delta}{dt} = 23{,}44^\circ \cdot \frac{2\pi}{365{,}25}\cos\!\left(\frac{2\pi t}{365{,}25}\right),$$
+
+que vale $0{,}40^\circ$ por día en los equinoccios y cero en los solsticios (de ahí el nombre de solsticio: del latín *sol* y *sistere*, «detenerse»).
+
+Ahora encadena un eslabón más: la duración del día depende de $\delta$. Con la fórmula de «Para ir más lejos» de la semana 1, cerca del equinoccio, cuando $\delta$ es pequeña, el día dura aproximadamente $12\text{ h} + \tfrac{2}{15}\tan\varphi\cdot\delta$ horas, con $\delta$ en grados (es la aproximación lineal de la fórmula, la recta tangente en $\delta = 0$). A 40° de latitud, eso son $\tfrac{2}{15}\cdot 0{,}839 = 0{,}112$ horas, unos **6,7 minutos por cada grado** de declinación. Por la regla de la cadena:
+
+$$\frac{d(\text{día})}{dt} = \frac{d(\text{día})}{d\delta}\cdot\frac{d\delta}{dt} \approx 6{,}7\ \frac{\text{min}}{\text{grado}} \cdot 0{,}40\ \frac{\text{grados}}{\text{día}} \approx 2{,}7\ \text{minutos por día}.$$
+
+En marzo y en septiembre, a 40° de latitud, el día gana o pierde casi 3 minutos de luz cada día. Cerca de los solsticios apenas cambia.
+
+**Ejercicios**
+
+1. Deriva $\sin(3t)$, $\cos(2t)$ y $(1 + t^2)^3$.
+2. ¿A qué ritmo cambia la declinación del Sol 45 días después del equinoccio?
+3. ¿Cuántos minutos gana el día, cada día, cerca del equinoccio de marzo a 60° de latitud norte?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $3\cos(3t)$; $-2\sin(2t)$; $3(1 + t^2)^2 \cdot 2t = 6t(1 + t^2)^2$.
+2. $0{,}403^\circ \cdot \cos(2\pi \cdot 45/365{,}25) = 0{,}403^\circ \cdot \cos 44{,}4^\circ \approx$ **0,29° por día**.
+3. $\tfrac{2}{15}\tan 60^\circ = 0{,}231$ horas, unos 13,9 minutos por grado; por $0{,}40$ grados al día: unos **5,6 minutos por día**. Cuanto más al norte, más deprisa cambian los días en primavera y otoño.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.
