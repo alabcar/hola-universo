@@ -63,4 +63,4 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 | Fase 1 · Principios básicos de astronomía | escrita (semanas 1 a 12), pendiente de revisión |
 | Fase 2 · Órbitas | escrita (semanas 13 a 24), pendiente de revisión |
 | Fase 3 · La luz | escrita (semanas 25 a 36), pendiente de revisión |
-| Fase 4 · El universo grande | pendiente |
+| Fase 4 · El universo grande | escrita (semanas 37 a 48), pendiente de revisión |
