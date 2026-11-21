@@ -44,6 +44,7 @@ export default defineConfig({
 					items: [{ autogenerate: { directory: 'fase-4' } }],
 				},
 				{ label: 'Recursos', slug: 'recursos' },
+				{ label: 'Glosario de etimologías', slug: 'glosario' },
 				{ label: 'Créditos y licencias', slug: 'creditos' },
 			],
 		}),

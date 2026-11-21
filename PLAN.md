@@ -17,6 +17,8 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
   4. El universo grande
 - **Idioma:** castellano. Los recursos en inglés se marcan como tales.
 - **Herramienta:** Astro Starlight, desplegado en GitHub Pages con GitHub Actions. Sin casillas de progreso ni backend.
+- **Licencia:** textos, cuadernos y gráficas con CC BY-SA 4.0 (archivo `LICENSE`). Los materiales de terceros conservan la suya.
+- **Páginas de apoyo:** Cómo estudiar (con repaso espaciado y material de observación), Recursos (con el libro *Astronomía* de OpenStax enlazado por capítulos) y Glosario de etimologías, que se genera con `python3 scripts/generar_glosario.py` a partir de los recuadros de las semanas. Hay que volver a generarlo cuando se añadan o cambien recuadros.
 - **Sin Raspberry Pi ni cámara:** se descartó. Los proyectos son solo Python en el ordenador. La observación es a ojo, con Stellarium y, opcionalmente, prismáticos.
 - **Privacidad:** la web es pública. No se escribe nada personal: ni lugares concretos de residencia u observación, ni nombres de personas, ni datos de trabajo. Se habla de "cielo urbano luminoso" o "cielo rural oscuro".
 - **Autoría de commits:** con el correo noreply de GitHub, nunca con el correo real.
@@ -64,3 +66,5 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 | Fase 2 · Órbitas | escrita (semanas 13 a 24), pendiente de revisión |
 | Fase 3 · La luz | escrita (semanas 25 a 36), pendiente de revisión |
 | Fase 4 · El universo grande | escrita (semanas 37 a 48), pendiente de revisión |
+| «Para ir más lejos» en las semanas 1 a 24 | escrito, pendiente de revisión |
+| Páginas de apoyo y glosario | escritas, pendientes de revisión |
