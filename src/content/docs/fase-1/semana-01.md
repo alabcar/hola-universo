@@ -240,7 +240,7 @@ En los equinoccios, $\delta = 0$, así que $\cos A = 0$ y $A = 90^\circ$: el Sol
 **Lo que las fórmulas no incluyen.** Tratan el Sol como un punto y la Tierra como si no tuviera aire. En la realidad, el día empieza cuando asoma el borde superior del disco, y la atmósfera desvía la luz (**refracción**) y deja ver el Sol cuando todavía está algo más de medio grado por debajo del horizonte. Las dos cosas juntas alargan el día unos minutos: a 40° de latitud, en los equinoccios, unos 9. Por eso el día del equinoccio dura algo más de 12 horas.
 
 :::note[De dónde viene la palabra]
-**Orto**, la salida de un astro, viene del latín *ortus*, «nacimiento», del verbo *oriri*, «levantarse, nacer», el mismo que da **oriente**: el lado por el que nacen los astros. **Ocaso** viene de *occasus*, «caída», del verbo *occidere*, «caer», que da **occidente**.
+**Orto**, la salida de un astro, viene del latín *ortus*, «nacimiento», del verbo *oriri*, «levantarse, nacer», el mismo del que viene oriente. Su contrario es el ocaso, la puesta; el origen de esa palabra lo verás en la semana 26.
 :::
 
 **Ejercicios**
