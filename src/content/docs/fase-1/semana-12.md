@@ -139,6 +139,45 @@ El resultado importante es que Euler explícito multiplica la energía por más 
 - **La causa.** El trabajo de una fuerza conservativa depende solo de los puntos inicial y final, y por eso se puede guardar como energía potencial. Más en el fondo, la energía se conserva porque las leyes de la física no cambian con el tiempo.
 - **Las herramientas.** El trabajo, la deducción de la energía cinética y de la potencial, el despeje de fórmulas con raíces, y la comprobación de un método numérico mediante la conservación de la energía.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Trabajo con una fuerza que cambia.** La fórmula $W = F\,d$ solo vale si la fuerza es constante. Si cambia con la posición, se divide el camino en tramos muy cortos, en cada uno la fuerza es casi constante, y se suman los trabajos de todos los tramos. Es una integral, la misma idea que la distancia como área bajo la curva de la velocidad (semana 11):
+
+$$W = \int_{x_1}^{x_2} F(x)\,dx.$$
+
+**El muelle.** Para estirar o comprimir un muelle una longitud $x$ hace falta una fuerza proporcional a $x$: $F = k\,x$, donde $k$, la **constante elástica**, mide su rigidez. Es la ley que publicó Robert Hooke en 1678. El trabajo para estirarlo desde $0$ hasta $x$ es el área de un triángulo:
+
+$$W = \int_0^x k\,x'\,dx' = \tfrac{1}{2}\,k\,x^2.$$
+
+Es la **energía potencial elástica**: la que guarda un muelle estirado y devuelve al soltarlo.
+
+**La gravedad lejos de la superficie.** La fórmula $m g h$ supone que $g$ no cambia con la altura. En la semana 16 verás que, en realidad, la fuerza de la gravedad disminuye con el cuadrado de la distancia al centro de la Tierra: $F = G M m/r^2$. El trabajo para subir un cuerpo desde la superficie, a una distancia $R$ del centro, hasta una distancia $r$ es
+
+$$W = \int_R^r \frac{G M m}{r'^2}\,dr' = G M m\left(\frac{1}{R} - \frac{1}{r}\right).$$
+
+Para alturas pequeñas, $r = R + h$, esto se convierte en $m g h$ (puedes comprobarlo en el ejercicio 2). Y para llevarlo infinitamente lejos, $1/r \to 0$ y el trabajo es finito: $G M m/R$. Como $g = G M/R^2$, eso es lo mismo que $m g R$: alejarse para siempre cuesta lo mismo que subir un radio terrestre si $g$ no disminuyera. Con esa energía cinética, $\tfrac{1}{2}mv^2 = m g R$, sale la **velocidad de escape**, $v = \sqrt{2gR}$, que calcularás en la semana 17.
+
+:::note[De dónde viene la palabra]
+**Elástico** viene del latín científico *elasticus*, creado en el siglo XVII a partir del griego *elastós*, «dúctil, que se puede estirar a golpes», del verbo *elaúnein*, «empujar, impulsar».
+:::
+
+**Ejercicios**
+
+1. Un muelle de constante $k = 200$ N/m, comprimido 10 cm, lanza una bola de 0,5 kg. ¿Cuánta energía guarda? ¿A qué velocidad sale la bola?
+2. Calcula la energía para subir 1 kg desde la superficie hasta 400 km de altura, donde orbita la Estación Espacial, con la fórmula exacta y con $m g h$. Usa $g = 9{,}81\ \text{m/s}^2$ y $R = 6371$ km, y escribe la exacta como $m g R\,h/(R + h)$.
+3. Calcula la velocidad de escape de la Tierra con $v = \sqrt{2gR}$.
+
+<details>
+<summary>Soluciones</summary>
+
+1. $E = \tfrac{1}{2} \cdot 200 \cdot 0{,}1^2 =$ **1 J**. $\tfrac{1}{2} \cdot 0{,}5 \cdot v^2 = 1$, así que $v =$ **2 m/s**.
+2. Exacta: $9{,}81 \cdot 6{,}371 \times 10^6 \cdot 400/6771 \approx$ **3,69 MJ**. Con $m g h$: $9{,}81 \cdot 400\,000 \approx$ **3,92 MJ**, un 6 % más, porque supone que $g$ no disminuye al subir.
+3. $\sqrt{2 \cdot 9{,}81 \cdot 6{,}371 \times 10^6} \approx$ **11,2 km/s**.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

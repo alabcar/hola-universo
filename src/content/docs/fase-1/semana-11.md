@@ -137,6 +137,37 @@ La fórmula de las horas de Sol por encima de una altura usa trigonometría esf�
 - **La causa.** La integral y la derivada son operaciones inversas: el área bajo una curva crece al ritmo que marca la propia curva. Derivando la posición sale la velocidad, e integrando la velocidad sale la posición.
 - **Las herramientas.** Sumas de rectángulos y de trapecios, la integral definida y su notación, el teorema fundamental del cálculo y su razón de ser, las primitivas de las potencias, y el uso de la integral numérica para acumular una magnitud que cambia día a día.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Volúmenes por rodajas.** La integral no solo calcula áreas: suma cualquier cosa que se pueda cortar en trozos finos. Corta una esfera de radio $R$ en rodajas perpendiculares a un eje, como un pan. La rodaja que está a una distancia $x$ del centro es un disco de radio $\sqrt{R^2 - x^2}$ (por Pitágoras, semana 7), de área $\pi(R^2 - x^2)$, y si tiene un grosor $dx$, su volumen es $\pi(R^2 - x^2)\,dx$. Sumando todas, de $x = -R$ a $x = R$:
+
+$$V = \int_{-R}^{R}\pi\,(R^2 - x^2)\,dx = \pi\left[R^2 x - \frac{x^3}{3}\right]_{-R}^{R} = \pi\left(2R^3 - \frac{2R^3}{3}\right) = \frac{4}{3}\pi R^3.$$
+
+Arquímedes llegó a este resultado en el siglo III a. C. con un método de rodajas muy parecido, y se sintió tan orgulloso que pidió que grabaran en su tumba una esfera dentro de un cilindro: la esfera ocupa exactamente **dos tercios** del cilindro que la envuelve, tanto en volumen como en superficie.
+
+**La superficie, derivando.** Si aumentas el radio de la esfera un poquito, $dR$, añades una capa fina, como la de una cebolla, de volumen aproximado (superficie) × (grosor). Por tanto, la derivada del volumen respecto al radio es la superficie:
+
+$$\frac{dV}{dR} = \frac{d}{dR}\left(\frac{4}{3}\pi R^3\right) = 4\pi R^2.$$
+
+Lo mismo pasa en el plano: la derivada del área del círculo, $\pi R^2$, es $2\pi R$, la longitud de la circunferencia. Es el teorema fundamental del cálculo de la sesión 2 en versión geométrica: acumular capas finas de superficie da el volumen.
+
+**Ejercicios**
+
+1. Calcula el volumen de un cono de altura $h$ y radio de la base $r$, cortándolo en rodajas paralelas a la base. Pista: a una distancia $x$ del vértice, la rodaja tiene radio $r\,x/h$.
+2. El radio del Sol es 109 veces el de la Tierra. ¿Cuántas Tierras cabrían en el Sol, por volumen?
+3. Calcula el volumen de la Tierra y el de una capa de 1 km de grosor en su superficie. ¿Qué fracción del volumen total es esa capa?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $V = \int_0^h \pi\,(r x/h)^2\,dx = \pi \frac{r^2}{h^2}\cdot\frac{h^3}{3} =$ **$\tfrac{1}{3}\pi r^2 h$**: un tercio del cilindro con la misma base y la misma altura.
+2. $109^3 \approx$ **1,3 millones**.
+3. $V = \tfrac{4}{3}\pi\,(6371\ \text{km})^3 \approx 1{,}08 \times 10^{12}\ \text{km}^3$. La capa: $4\pi\,(6371)^2 \cdot 1 \approx 5{,}1 \times 10^8\ \text{km}^3$. Su fracción es $3/6371 \approx$ **0,05 %**: todo lo que conocemos de cerca, montañas, océanos y casi toda la vida, está en una piel finísima.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

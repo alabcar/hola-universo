@@ -17,6 +17,8 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
   4. El universo grande
 - **Idioma:** castellano. Los recursos en inglés se marcan como tales.
 - **Herramienta:** Astro Starlight, desplegado en GitHub Pages con GitHub Actions. Sin casillas de progreso ni backend.
+- **Licencia:** textos, cuadernos y gráficas con CC BY-SA 4.0 (archivo `LICENSE`). Los materiales de terceros conservan la suya.
+- **Páginas de apoyo:** Cómo estudiar (con repaso espaciado y material de observación), Recursos (con el libro *Astronomía* de OpenStax enlazado por capítulos) y Glosario de etimologías, que se genera con `python3 scripts/generar_glosario.py` a partir de los recuadros de las semanas. Hay que volver a generarlo cuando se añadan o cambien recuadros.
 - **Sin Raspberry Pi ni cámara:** se descartó. Los proyectos son solo Python en el ordenador. La observación es a ojo, con Stellarium y, opcionalmente, prismáticos.
 - **Privacidad:** la web es pública. No se escribe nada personal: ni lugares concretos de residencia u observación, ni nombres de personas, ni datos de trabajo. Se habla de "cielo urbano luminoso" o "cielo rural oscuro".
 - **Autoría de commits:** con el correo noreply de GitHub, nunca con el correo real.
@@ -29,6 +31,9 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 4. **Datos y cifras:** se verifican con fuente primaria. Si una cifra no se ha podido comprobar, se dice.
 5. **Tono:** agradable pero riguroso. Sin paternalismo ni ingenuidad: se trata a la persona lectora como a un adulto capaz. Se explica la intuición y también la formulación correcta, sin esconder la dificultad ni simplificar hasta decir algo falso. Se escribe siempre "matemáticas", nunca "mates".
 6. **Desde cero y con el origen de las palabras** (pedido tras leer las primeras semanas de la fase 1): no se da nada por sabido. Cada concepto se explica desde su fundamento, recordando lo necesario de semanas anteriores. Los términos clave llevan su etimología en un recuadro «De dónde viene la palabra». Se aplica a todas las fases.
+7. **Para ir más lejos** (pedido al encargar las fases 3 y 4): cada semana termina con un apartado opcional, «Para ir más lejos (opcional)», con matemáticas o física más avanzadas y ejercicios resueltos, para poder volver a la web durante mucho tiempo. No es necesario para seguir con la semana siguiente.
+8. **Material de observación:** a simple vista, Stellarium y unos prismáticos 8×30. Se puede hablar de telescopios, pero ninguna sesión los exige.
+9. **Datos:** los cuadernos usan datos calculados o sintéticos (y lo dicen claramente) o datos reales con licencia compatible guardados en `cuadernos/datos/`, con su atribución. Las celdas que descargan datos externos y no se han podido probar se marcan como tales.
 
 ## Plantilla de cada semana
 
@@ -40,8 +45,9 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
    - Astronomía u observación
    - Proyecto (Python)
 3. **Qué has aprendido**: la respuesta a la pregunta en pocas líneas y las ideas que la sostienen.
-4. **Recursos comentados**.
-5. **Imágenes y créditos**.
+4. **Para ir más lejos (opcional)**.
+5. **Recursos comentados**.
+6. **Imágenes y créditos**.
 
 ## Flujo de trabajo con git
 
@@ -58,5 +64,7 @@ Un plan de formación como aficionado en astronomía, física y matemáticas, pu
 | Esqueleto de la web (Starlight + despliegue) | publicado |
 | Fase 1 · Principios básicos de astronomía | escrita (semanas 1 a 12), pendiente de revisión |
 | Fase 2 · Órbitas | escrita (semanas 13 a 24), pendiente de revisión |
-| Fase 3 · La luz | pendiente |
-| Fase 4 · El universo grande | pendiente |
+| Fase 3 · La luz | escrita (semanas 25 a 36), pendiente de revisión |
+| Fase 4 · El universo grande | escrita (semanas 37 a 48), pendiente de revisión |
+| «Para ir más lejos» en las semanas 1 a 24 | escrito, pendiente de revisión |
+| Páginas de apoyo y glosario | escritas, pendientes de revisión |

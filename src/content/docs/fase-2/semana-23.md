@@ -143,6 +143,45 @@ El cuaderno de la semana 23:
 - **Las resonancias.** Cuando los periodos de dos cuerpos están en proporción de enteros pequeños, los tirones se acumulan. Unas veces vacían una región (huecos de Kirkwood, división de Cassini) y otras mantienen una configuración estable (Neptuno y Plutón, las lunas de Júpiter).
 - **Las herramientas.** Qué es una ecuación diferencial, la exponencial como solución de $dN/dt = kN$, el oscilador y su solución con seno y coseno, el método de Euler como forma general de resolver ecuaciones diferenciales, y la idea de resonancia.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**El oscilador amortiguado.** Un muelle con rozamiento, que frena en proporción a la velocidad, cumple la ecuación diferencial $m\ddot{x} = -kx - b\dot{x}$. Dividiendo por $m$ y llamando $\omega_0^2 = k/m$ (la frecuencia natural) y $\gamma = b/m$ (el amortiguamiento):
+
+$$\ddot{x} + \gamma\,\dot{x} + \omega_0^2\,x = 0.$$
+
+Si el rozamiento es pequeño, la solución es una oscilación que se apaga poco a poco:
+
+$$x(t) = A\,e^{-\gamma t/2}\cos(\omega_0 t)$$
+
+(con más precisión, la frecuencia es $\sqrt{\omega_0^2 - \gamma^2/4}$, casi $\omega_0$). Puedes comprobarlo derivando dos veces y sustituyendo; es largo pero directo. La amplitud se reduce en un factor $e$ cada $2/\gamma$ segundos. El cociente $Q = \omega_0/\gamma$, el **factor de calidad**, dice cuántas oscilaciones aguanta: unas $Q/\pi$ antes de que la amplitud caiga en un factor $e$. Un diapasón tiene un $Q$ de miles; un amortiguador de coche, cercano a 1.
+
+**El oscilador forzado.** Si además lo empujas periódicamente con una fuerza $F_0\cos(\omega t)$, al cabo de un rato, cuando se ha apagado el movimiento inicial, oscila con la frecuencia del empuje, $\omega$, no con la suya, y con una amplitud
+
+$$A(\omega) = \frac{F_0/m}{\sqrt{(\omega_0^2 - \omega^2)^2 + \gamma^2\,\omega^2}}.$$
+
+Mírala en tres zonas. Si empujas muy despacio ($\omega \ll \omega_0$), $A \approx F_0/k$: el muelle se estira lo que se estiraría con la fuerza quieta. Si empujas muy deprisa ($\omega \gg \omega_0$), $A \approx F_0/(m\omega^2)$, cada vez menor: la masa no tiene tiempo de seguirte. Y si empujas a su ritmo ($\omega = \omega_0$), el primer término de la raíz se anula y $A = Q\,F_0/k$: la respuesta se multiplica por $Q$. Cuanto menor es el amortiguamiento, más alto y estrecho es el pico. Es la resonancia de la sesión 2, con números.
+
+**Mareas en resonancia.** Las mareas son un oscilador forzado: la Luna empuja el agua cada 12,4 horas, y cada cuenca de mar tiene su propio periodo natural de oscilación, como el agua de una bañera que va y viene. Donde ese periodo se parece al de la marea, la respuesta se amplifica. En la bahía de Fundy, en Canadá, la cuenca tiene un periodo natural de unas 13 horas, y allí se dan las mareas más grandes del mundo, de hasta unos 16 m.
+
+**Ejercicios**
+
+Usa $\omega_0 = 1$, $\gamma = 0{,}1$ y $F_0/m = 1$.
+
+1. Calcula la amplitud para $\omega = 0{,}5$, $1$ y $2$. ¿Cuánto vale $Q$?
+2. ¿Cuántas oscilaciones, más o menos, hace el oscilador libre antes de que su amplitud caiga en un factor $e$? ¿Y un diapasón con $Q = 1000$?
+3. Comprueba que, para $\omega = \omega_0 \pm \gamma/2$, la amplitud es aproximadamente el máximo dividido por $\sqrt{2}$. Pista: cerca de la resonancia, $\omega_0^2 - \omega^2 = (\omega_0 - \omega)(\omega_0 + \omega) \approx 2\omega_0\,(\omega_0 - \omega)$. Este resultado dice que la anchura del pico es más o menos $\gamma$.
+
+<details>
+<summary>Soluciones</summary>
+
+1. $\omega = 0{,}5$: $1/\sqrt{0{,}75^2 + 0{,}05^2} \approx$ **1,33**. $\omega = 1$: $1/\sqrt{0 + 0{,}01} =$ **10**. $\omega = 2$: $1/\sqrt{9 + 0{,}04} \approx$ **0,33**. $Q = 1/0{,}1 =$ **10**: en la resonancia, la respuesta es 10 veces la estática ($F_0/k = 1$).
+2. Unas $Q/\pi \approx$ **3** oscilaciones. El diapasón, unas **300**: por eso suena tanto tiempo.
+3. Con $\omega_0 - \omega = \mp\gamma/2$: $\omega_0^2 - \omega^2 \approx \mp\gamma\omega_0$, y la raíz vale $\sqrt{\gamma^2\omega_0^2 + \gamma^2\omega_0^2} = \sqrt{2}\,\gamma\omega_0$ (tomando $\omega \approx \omega_0$ en el segundo término). En el máximo vale $\gamma\omega_0$. La amplitud es la del máximo dividida por **$\sqrt{2}$**.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

@@ -154,6 +154,35 @@ El cuaderno de la semana 18:
 - **La física.** La energía de una órbita depende solo de su semieje mayor, $E = -GMm/(2a)$, y la velocidad en cualquier punto sale de la vis viva, $v^2 = GM(2/r - 1/a)$.
 - **Las herramientas.** Sistemas de ecuaciones por sustitución y por reducción, también no lineales, y el uso combinado de dos leyes de conservación para encontrar dos incógnitas.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**La pelota y el tren.** Lanza una pelota a 10 m/s contra un tren que viene hacia ti a 20 m/s. Desde el tren, la pelota llega a 30 m/s, rebota de forma elástica y sale a 30 m/s. Desde el andén hay que sumarle la velocidad del tren: sale a **50 m/s**. Ha ganado el doble de la velocidad del tren, y el tren, con una masa enorme, apenas ha notado nada. Ese es el principio de la **asistencia gravitatoria**, la técnica que ha permitido llegar a los planetas exteriores.
+
+**Rozar un planeta.** Cuando una sonda pasa cerca de un planeta, visto **desde el planeta** se acerca y se aleja a la misma velocidad, $v_\infty$: la energía se conserva en ese sistema de referencia, y la trayectoria es una hipérbola (semana 17). Lo único que cambia es la **dirección**, que gira un ángulo $\delta$. Para una sonda que pasa a una distancia mínima $r_\text{p}$ del centro de un planeta de masa $M$,
+
+$$\sin\frac{\delta}{2} = \frac{1}{1 + r_\text{p}\,v_\infty^2/(GM)},$$
+
+y el vector velocidad cambia en $|\Delta\vec{v}| = 2\,v_\infty \sin(\delta/2)$. Pero desde el Sol hay que sumar la velocidad del planeta, que puede ser de decenas de km/s. Girar una flecha de velocidad y luego sumarle otra grande puede cambiar mucho su longitud: la sonda sale con más velocidad respecto al Sol, o con menos, según pase por detrás del planeta (respecto a su movimiento) o por delante. La energía que gana la sonda la pierde el planeta, pero su masa es tan grande que el cambio en su órbita es inmedible.
+
+Las *Voyager* aprovecharon una alineación de los planetas exteriores que se repite cada unos 175 años. La *Voyager 2*, lanzada en 1977, pasó por Júpiter, Saturno, Urano y Neptuno, y llegó a Neptuno en 12 años; con una transferencia de Hohmann directa (sesión 3) habría tardado unos 30. Y la asistencia también sirve para **perder** velocidad y caer hacia el Sol: la sonda *Parker Solar Probe* usa pasos sucesivos por Venus para acercarse cada vez más a él.
+
+**Ejercicios**
+
+1. En el ejemplo del tren, ¿con qué velocidad saldría la pelota si el tren se alejara de ti a 5 m/s y la lanzaras a 10 m/s?
+2. Una sonda llega a Júpiter con $v_\infty = 10$ km/s y pasa a $r_\text{p} = 5$ radios de Júpiter (357 000 km) de su centro. Con $GM_\text{J} = 1{,}267 \times 10^{17}\ \text{m}^3/\text{s}^2$, calcula el ángulo que gira su velocidad y el cambio de velocidad $|\Delta\vec{v}|$.
+3. ¿Qué pasa con $\delta$ y con $|\Delta\vec{v}|$ si la sonda pasa más cerca, a 2 radios? ¿Hay un límite?
+
+<details>
+<summary>Soluciones</summary>
+
+1. Desde el tren, la pelota llega a $10 - 5 = 5$ m/s y rebota a 5 m/s hacia ti; desde el andén, $5 - 5 =$ **0 m/s**: se queda quieta. Una pelota que rebota contra algo que se aleja pierde velocidad.
+2. $r_\text{p}\,v_\infty^2/(GM) = 3{,}57 \times 10^8 \cdot 10^8/1{,}267 \times 10^{17} \approx 0{,}282$. $\sin(\delta/2) = 1/1{,}282 = 0{,}780$, así que $\delta/2 = 51{,}3^\circ$ y $\delta \approx$ **102,5°**. $|\Delta\vec{v}| = 2 \cdot 10 \cdot 0{,}780 \approx$ **15,6 km/s**.
+3. Con 2 radios: $\sin(\delta/2) = 1/1{,}113 = 0{,}899$, $\delta \approx$ **128°** y $|\Delta\vec{v}| \approx$ **18 km/s**. Cuanto más cerca, más gira, pero el límite lo pone el propio planeta (y, en Júpiter, su radiación): no se puede pasar por dentro. El cambio nunca supera $2\,v_\infty$.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

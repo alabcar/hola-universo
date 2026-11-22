@@ -147,6 +147,37 @@ El modelo supone que la Luna se mueve con regularidad. En realidad su velocidad 
 - **La causa.** La Luna orbita la Tierra y la Tierra orbita el Sol, y la fase depende solo de la geometría de las tres posiciones, no de la sombra de la Tierra. La sombra solo interviene en los eclipses, que exigen además que la Luna cruce el plano de la órbita terrestre.
 - **Las herramientas.** Fracciones, fracciones equivalentes y porcentajes (cuidado con «cuarto»), proporcionalidad entre tiempo y ángulo, y un modelo de ciclo medio que se puede contrastar con una medida independiente.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar. Usa el coseno, que verás en la semana 7.
+
+**Qué fracción del disco está iluminada.** La Luna es una esfera con una mitad iluminada por el Sol. Visto desde la Tierra, el borde entre la parte iluminada y la oscura, el **terminador**, es un círculo máximo de la esfera visto de lado: se proyecta como media elipse. Llama **elongación**, $\varepsilon$, al ángulo entre el Sol y la Luna vistos desde la Tierra: $0^\circ$ en luna nueva, $90^\circ$ en cuarto creciente, $180^\circ$ en luna llena. Como el Sol está mucho más lejos que la Luna, el ángulo entre el Sol y la Tierra visto desde la Luna (el **ángulo de fase**) es $180^\circ - \varepsilon$, y la fracción iluminada del disco resulta
+
+$$k = \frac{1 - \cos\varepsilon}{2}.$$
+
+Comprueba los casos conocidos: en luna nueva $\cos 0^\circ = 1$ y $k = 0$; en cuarto creciente $\cos 90^\circ = 0$ y $k = 1/2$; en luna llena $\cos 180^\circ = -1$ y $k = 1$. Lo interesante es lo que pasa entre medias: $k$ no crece en proporción al tiempo. Cerca de la luna nueva y de la llena cambia despacio, y cerca de los cuartos, deprisa.
+
+**El mes sinódico con una resta.** En la sesión 3 explicaste con palabras por qué el mes sinódico (29,53 días) es más largo que el sidéreo (27,32). Con ritmos se hace en una línea. La Luna avanza respecto a las estrellas $360^\circ/27{,}32$ al día, y el Sol, $360^\circ/365{,}25$ al día. Respecto al Sol, la Luna avanza la diferencia, y un mes sinódico es lo que tarda en ganarle una vuelta completa:
+
+$$\frac{360^\circ}{S} = \frac{360^\circ}{27{,}32} - \frac{360^\circ}{365{,}25} \quad\Longrightarrow\quad \frac{1}{S} = \frac{1}{27{,}32} - \frac{1}{365{,}25}.$$
+
+Es la misma fórmula que usarás en la semana 13 para los planetas.
+
+**Ejercicios**
+
+1. Calcula $S$ con la fórmula y compáralo con 29,53 días.
+2. La elongación crece unos $360^\circ/29{,}53 \approx 12{,}19^\circ$ al día. ¿Qué fracción del disco está iluminada 3 días después de la luna nueva? ¿Cuántos días después de la luna nueva está iluminada una cuarta parte?
+3. En su máxima elongación, Venus está a unos $46^\circ$ del Sol y su ángulo de fase es de $90^\circ$, ¿qué fracción de su disco ves iluminada? Ojo: para Venus, el Sol no está lejos comparado con Venus, así que aquí hay que usar el ángulo de fase, $i$, con $k = (1 + \cos i)/2$.
+
+<details>
+<summary>Soluciones</summary>
+
+1. $1/27{,}32 - 1/365{,}25 = 0{,}036603 - 0{,}002738 = 0{,}033865$, así que $S = 1/0{,}033865 \approx$ **29,53 días**.
+2. A los 3 días, $\varepsilon \approx 36{,}6^\circ$ y $k = (1 - 0{,}803)/2 \approx$ **0,10**: un 10 % del disco, un creciente fino. Para $k = 1/4$ hace falta $\cos\varepsilon = 1/2$, $\varepsilon = 60^\circ$: unos $60/12{,}19 \approx$ **4,9 días**.
+3. $k = (1 + \cos 90^\circ)/2 =$ **la mitad**: Venus se ve como una «media luna» en su máxima elongación, algo que Galileo vio con su telescopio en 1610.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

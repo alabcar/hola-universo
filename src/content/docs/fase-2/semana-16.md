@@ -146,6 +146,42 @@ El cuaderno de la semana 16:
 - **La ley.** $F = G\,m_1 m_2 / r^2$, igual para todos los cuerpos del universo. En la superficie de un planeta da $g = GM/R^2$, independiente de la masa del cuerpo que cae.
 - **Las herramientas.** Vectores, sus componentes, su suma y el vector unitario; la proporcionalidad inversa al cuadrado y su origen geométrico.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**El teorema de la cáscara.** Para aplicar la ley de la gravitación a la Tierra y la Luna, has medido las distancias entre sus **centros**, como si toda su masa estuviera concentrada en un punto. Newton tuvo que demostrar que eso es correcto, y lo hizo en los *Principia* (1687) con dos resultados sobre una **cáscara esférica** (una capa fina y uniforme, como la piel de una pelota):
+
+1. Desde **fuera**, la cáscara atrae exactamente como si toda su masa estuviera en su centro.
+2. Desde **dentro**, en cualquier punto, la atracción total es **cero**.
+
+Un planeta esférico es un conjunto de cáscaras, una dentro de otra, así que el primer resultado justifica medir desde el centro. El segundo tiene una explicación bonita. Desde un punto dentro de la cáscara, traza un cono estrecho y su opuesto. Cortan la cáscara en dos manchas: la del lado cercano es más pequeña, y la del lejano, más grande. El área de cada mancha crece con el **cuadrado** de la distancia, y la atracción de cada trozo disminuye con el **cuadrado** de la distancia. Las dos cosas se compensan exactamente, y las dos manchas tiran con la misma fuerza en sentidos opuestos. Solo funciona porque la ley es del inverso del cuadrado.
+
+**Un túnel a través de la Tierra.** Imagina una Tierra de densidad uniforme y un túnel recto que la atraviesa por el centro. A una distancia $r$ del centro, las capas de fuera no tiran (resultado 2) y solo atrae la esfera de radio $r$ que queda debajo, cuya masa es $M\,r^3/R^3$. La gravedad allí vale
+
+$$g(r) = \frac{G M r^3/R^3}{r^2} = g\,\frac{r}{R}:$$
+
+disminuye en proporción a la distancia, hasta anularse en el centro. Una fuerza que tira hacia el centro en proporción a la distancia es como la de un muelle (semana 12): si te dejas caer por el túnel sin aire ni rozamiento, aceleras hasta el centro, frenas al subir y llegas justo a la superficie en las antípodas, y luego vuelves. El periodo de esa oscilación es
+
+$$T = 2\pi\sqrt{\frac{R}{g}} \approx 84 \text{ minutos},$$
+
+el mismo que el de una órbita rasante. No es casualidad: la sombra de un movimiento circular uniforme sobre una recta es justamente esta oscilación (semana 13). Llegarías a las antípodas en 42 minutos. La Tierra real tiene un núcleo mucho más denso que la corteza, y la gravedad incluso aumenta un poco al bajar, hasta unos $10{,}7\ \text{m/s}^2$ en el límite del núcleo, a 2900 km de profundidad; con la densidad real, el viaje se acorta a unos 38 minutos.
+
+**Ejercicios**
+
+1. En la Tierra uniforme, ¿cuánto vale la gravedad a medio camino del centro?
+2. ¿A qué velocidad pasarías por el centro? Pista: es un movimiento armónico de amplitud $R$ y $\omega = \sqrt{g/R}$, así que la velocidad máxima es $\omega R$.
+3. Un túnel recto une dos ciudades sin pasar por el centro. Demuestra que, en la Tierra uniforme, el viaje también dura 42 minutos. Pista: si $x$ es la distancia al punto medio del túnel, ¿qué parte de $g(r)$ va a lo largo del túnel?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $g/2 \approx$ **4,9 m/s²**.
+2. $\sqrt{gR} = \sqrt{9{,}81 \cdot 6{,}371 \times 10^6} \approx$ **7,9 km/s**, la velocidad de una órbita rasante.
+3. La gravedad apunta al centro y vale $g\,r/R$. Su componente a lo largo del túnel es $g\,r/R$ multiplicado por $x/r$ (el coseno del ángulo entre el túnel y la dirección al centro), es decir, $g\,x/R$. Es la misma ley que en el túnel por el centro, con $x$ en lugar de $r$: el periodo es el mismo, **84 minutos**, y el viaje dura **42**, sea cual sea la longitud del túnel.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

@@ -7,3 +7,5 @@ Plan de estudio como afición en astronomía, física y matemáticas, publicado 
 - La web usa [Astro Starlight](https://starlight.astro.build). Los textos están en `src/content/docs/`.
 
 Para verla en local: `npm install` y `npm run dev`.
+
+Los textos y los cuadernos se publican con la licencia [CC BY-SA 4.0](LICENSE).

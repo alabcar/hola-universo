@@ -76,7 +76,7 @@ Los dos últimos pertenecen a una familia de métodos llamados **simplécticos**
 
 - el semieje mayor $a$ y la excentricidad $e$, que dan el tamaño y la forma (semana 14);
 - la **longitud del perihelio**, $\varpi$ (una «pi» con forma de omega), que dice hacia dónde apunta el eje mayor;
-- la **longitud media**, $L$, que dice dónde está el planeta en su órbita en la época. Con $M = L - \varpi$ y la ecuación de Kepler de la semana 14 se obtiene su posición y su velocidad.
+- la **longitud media**, $L$, que dice dónde está el planeta en su órbita en la época. Con $M = L - \varpi$ y la ecuación de Kepler (semana 14, «Para ir más lejos») se obtiene su posición y su velocidad.
 
 Usarás los elementos del JPL para la época J2000, el mediodía del 1 de enero de 2000, junto con lo que cambia cada uno por siglo (porque las perturbaciones los hacen derivar despacio). Con las dos cosas puedes calcular los elementos para cualquier fecha cercana y empezar la simulación cuando quieras. Las órbitas reales están un poco inclinadas entre sí (la de Marte, 1,85° respecto a la de la Tierra; la de Mercurio, 7°). Las ignoraremos y lo haremos todo en el plano de la eclíptica: es una aproximación, y verás cuánto cuesta.
 
@@ -128,6 +128,52 @@ El proyecto final de la fase. El cuaderno de la semana 24:
 - **La respuesta.** Sí: con la ley de la gravitación, unos pocos números por planeta y un método de integración adecuado, se puede predecir dónde estará Marte dentro de un año con un error pequeño. Empezando la simulación con los datos de hoy, la oposición de 2027 sale con un error de minutos. Empezando en el año 2000, el error se ha acumulado hasta algo más de un día: las condiciones iniciales mandan.
 - **El método.** Integrar una ecuación diferencial paso a paso con un método que conserve la energía (Verlet), a partir de condiciones iniciales tomadas de elementos orbitales publicados, y validar el resultado con observaciones conocidas antes de usarlo para predecir.
 - **La fase entera.** Has pasado del movimiento aparente de los planetas en el cielo (semana 13) a las leyes que lo describen (Kepler, semanas 14 y 15), a la fuerza que lo causa (Newton, semanas 16 y 17) y a las herramientas para calcularlo en cualquier situación: viajes (18), cambios de coordenadas (19), dos cuerpos (20), mareas (21), masas (22), muchos cuerpos (23) y predicciones (24).
+
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Cuánto crece un error.** En la semana 23 viste que, en el Sistema Solar, un error en la posición de los planetas interiores se multiplica por 10 cada 10 millones de años. Un crecimiento así es **exponencial**:
+
+$$\delta(t) = \delta_0\,e^{t/\tau},$$
+
+donde $\delta_0$ es el error inicial y $\tau$, el **tiempo de Lyapunov**, el tiempo en que el error se multiplica por $e \approx 2{,}718$. Lleva el nombre del matemático ruso Aleksandr Lyapunov, que estudió la estabilidad de los movimientos a finales del siglo XIX. Si el error se multiplica por 10 cada 10 millones de años, $e^{10/\tau} = 10$, así que $\tau = 10/\ln 10 \approx 4{,}3$ millones de años. Las simulaciones dan valores de ese orden, unos 5 millones de años.
+
+**El horizonte de predicción.** Si aceptas errores de hasta $\Delta$, la predicción sirve mientras $\delta(t) < \Delta$, es decir, hasta
+
+$$t = \tau\,\ln\frac{\Delta}{\delta_0}.$$
+
+La clave es el logaritmo: mejorar mucho la precisión inicial alarga poco el horizonte. Dividir el error inicial por 1000 solo añade $\tau\ln 1000 \approx 6{,}9\,\tau$, unos 30 millones de años. Por eso no se puede predecir dónde estará la Tierra dentro de 100 millones de años, por muy bien que se midan las posiciones de hoy: es una propiedad del sistema, no de nuestros instrumentos.
+
+**El caos en tu ordenador.** Un ejemplo de juguete muestra lo mismo en pocos pasos. La **aplicación del doble** toma un número entre 0 y 1, lo multiplica por 2 y se queda con la parte decimal: $x_{n+1} = 2x_n \bmod 1$. Cualquier diferencia entre dos puntos de partida se duplica en cada paso: su tiempo de Lyapunov es de $1/\ln 2 \approx 1{,}4$ pasos. Los ordenadores guardan los números en binario con 53 cifras significativas, y cada duplicación pierde una por la izquierda. Prueba en Python:
+
+```python
+x = 0.1
+for n in range(1, 61):
+    x = (2 * x) % 1
+    print(n, x)
+```
+
+El valor exacto repite para siempre 0,2, 0,4, 0,8, 0,6, 0,2… Pero 0,1 no se puede escribir exactamente en binario, y el ordenador guarda un número que difiere en unas cinco trillonésimas. Esa diferencia se duplica en cada paso: hacia el paso 40 ya se ve en los primeros decimales, y en el paso 55 el ordenador da **0** exactamente, un valor que la secuencia verdadera nunca alcanza. Las leyes son exactas y deterministas, pero el error inicial crece hasta comérselo todo.
+
+:::note[De dónde viene la palabra]
+**Determinismo** viene de *determinar*, del latín *determinare*, «fijar los límites», de *terminus*, «mojón, límite»: un sistema determinista es aquel cuyo futuro queda fijado por su estado presente. El caos muestra que estar fijado no es lo mismo que ser predecible.
+:::
+
+**Ejercicios**
+
+1. Si el error de una predicción se multiplica por 2 cada 3 millones de años, ¿cuánto vale $\tau$?
+2. La posición de la Tierra se conoce hoy con un error de unos 15 m. ¿Cuándo será el error tan grande como la propia órbita, unos $1{,}5 \times 10^{11}$ m, con $\tau = 4{,}3$ millones de años? ¿Y si el error inicial fuera de 1,5 cm?
+3. En la aplicación del doble, con un error inicial de $10^{-16}$, ¿cuántos pasos hacen falta para que el error llegue a 1?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $e^{3/\tau} = 2$, así que $\tau = 3/\ln 2 \approx$ **4,3 millones de años**.
+2. $t = 4{,}3 \cdot \ln(1{,}5 \times 10^{11}/15) = 4{,}3 \cdot \ln 10^{10} \approx 4{,}3 \cdot 23 \approx$ **100 millones de años**. Con 1,5 cm, mil veces mejor: $4{,}3 \cdot \ln 10^{13} \approx$ **130 millones de años**. Mil veces más precisión, solo un 30 % más de horizonte.
+3. $2^n \cdot 10^{-16} = 1$, así que $n = 16\,\log_2 10 \approx 16 \cdot 3{,}32 \approx$ **53 pasos**.
+
+</details>
 
 ## Recursos
 

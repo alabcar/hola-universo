@@ -216,6 +216,50 @@ El modelo del cuaderno usa fórmulas de trigonometría que todavía no has estud
 - **Las estaciones.** En verano el Sol pasa más horas sobre el horizonte y sube más alto, y su luz llega más concentrada. La distancia al Sol apenas influye: estamos más cerca en enero.
 - **Las herramientas.** Potencias de 10 y notación científica para trabajar con cifras astronómicas, el factor de escala para pensar en proporciones, la costumbre de arrastrar las unidades en los cálculos y la de contrastar un modelo con una medida independiente.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar. Usa el seno, el coseno y la tangente, que verás en la semana 7: si todavía no los conoces, guárdalo para entonces.
+
+**Las fórmulas del cuaderno.** El cuaderno de esta semana calculaba por dónde sale el Sol y cuántas horas de luz hay con dos fórmulas que tratabas como una caja negra. Ya puedes ver qué dicen. Necesitan dos datos:
+
+- tu **latitud**, $\varphi$ (la letra griega fi): $+40^\circ$ significa 40° al norte del ecuador;
+- la **declinación** del Sol, $\delta$ (delta): cuántos grados está el Sol al norte o al sur del ecuador celeste, que es la prolongación del ecuador terrestre en el cielo (semana 3). Por la inclinación del eje, va de $+23{,}44^\circ$ en el solsticio de junio a $-23{,}44^\circ$ en el de diciembre, y vale $0^\circ$ en los equinoccios.
+
+**Cuántas horas de luz.** El cielo gira 15° por hora alrededor del eje del mundo. El Sol sale cuando le faltan $H_0$ grados de giro para cruzar el meridiano (la línea norte-sur que pasa por el cénit) y se pone cuando han pasado otros $H_0$ grados desde que lo cruzó. Ese ángulo cumple
+
+$$\cos H_0 = -\tan\varphi\,\tan\delta,$$
+
+y el día dura $2H_0/15$ horas. La fórmula sale de la de la altura de un astro, que verás en «Para ir más lejos» de la semana 3, poniendo altura cero.
+
+**Por dónde sale.** El **azimut** del punto por donde sale el Sol, $A$, contado desde el norte hacia el este, cumple
+
+$$\cos A = \frac{\sin\delta}{\cos\varphi}.$$
+
+En los equinoccios, $\delta = 0$, así que $\cos A = 0$ y $A = 90^\circ$: el Sol sale exactamente por el este en todo el planeta. Con $\delta > 0$ el coseno es positivo, $A < 90^\circ$ y el Sol sale desplazado hacia el norte; con $\delta < 0$, hacia el sur. Cuanto mayor es la latitud, menor es $\cos\varphi$ y mayor el desplazamiento.
+
+**Lo que las fórmulas no incluyen.** Tratan el Sol como un punto y la Tierra como si no tuviera aire. En la realidad, el día empieza cuando asoma el borde superior del disco, y la atmósfera desvía la luz (**refracción**) y deja ver el Sol cuando todavía está algo más de medio grado por debajo del horizonte. Las dos cosas juntas alargan el día unos minutos: a 40° de latitud, en los equinoccios, unos 9. Por eso el día del equinoccio dura algo más de 12 horas.
+
+:::note[De dónde viene la palabra]
+**Orto**, la salida de un astro, viene del latín *ortus*, «nacimiento», del verbo *oriri*, «levantarse, nacer», el mismo del que viene oriente. Su contrario es el ocaso, la puesta; el origen de esa palabra lo verás en la semana 26.
+:::
+
+**Ejercicios**
+
+1. ¿Cuánto dura el día en los equinoccios, en cualquier latitud? ¿Por dónde sale el Sol?
+2. A 40° de latitud norte, calcula las horas de luz y el azimut del orto en el solsticio de junio ($\delta = +23{,}44^\circ$) y en el de diciembre ($\delta = -23{,}44^\circ$). ¿Cuánto suman las dos duraciones? ¿Por qué?
+3. A 60° de latitud norte, más o menos la de Oslo o Helsinki, ¿cuánto dura el día en el solsticio de junio?
+4. ¿A partir de qué latitud no se pone el Sol en el solsticio de junio? (Pista: un coseno no puede ser menor que −1.)
+
+<details>
+<summary>Soluciones</summary>
+
+1. Con $\delta = 0$, $\tan\delta = 0$, así que $\cos H_0 = 0$ y $H_0 = 90^\circ$: el día dura $2 \cdot 90/15 =$ **12 horas** (sin contar la refracción). Y como $\cos A = 0$, el Sol sale por el **este**.
+2. Junio: $\cos H_0 = -\tan 40^\circ \cdot \tan 23{,}44^\circ = -0{,}8391 \cdot 0{,}4335 = -0{,}364$, así que $H_0 = 111{,}3^\circ$ y el día dura **14,84 h** (14 h 50 min). $\cos A = 0{,}3978/0{,}7660 = 0{,}519$, así que $A =$ **58,7°**: unos 31° al norte del este. Diciembre: $\cos H_0 = +0{,}364$, $H_0 = 68{,}7^\circ$, **9,16 h**, y $A =$ **121,3°**, unos 31° al sur del este. Las dos duraciones suman **24 horas**: cambiar el signo de $\delta$ cambia el signo del coseno, y el ángulo cuyo coseno es $-x$ es $180^\circ$ menos el ángulo cuyo coseno es $x$. La noche más larga de diciembre dura lo mismo que el día más largo de junio.
+3. $\cos H_0 = -\tan 60^\circ \cdot \tan 23{,}44^\circ = -1{,}732 \cdot 0{,}4335 = -0{,}751$, así que $H_0 = 138{,}7^\circ$ y el día dura unas **18,5 horas**.
+4. El Sol no se pone si $-\tan\varphi\,\tan\delta \leq -1$, es decir, si $\tan\varphi \geq 1/\tan 23{,}44^\circ = 2{,}307$: $\varphi \geq$ **66,56°**. Es el **círculo polar ártico**, que está a $90^\circ - 23{,}44^\circ$ del ecuador.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

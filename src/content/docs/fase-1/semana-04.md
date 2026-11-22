@@ -158,6 +158,42 @@ El cuaderno de la semana 4:
 - **La causa.** La Tierra gira sobre sí misma y además avanza en su órbita, lo que hace el día solar unos 4 minutos más largo que el sidéreo.
 - **Las herramientas.** Qué es una función y cómo se lee su gráfica; la función lineal, su pendiente como ritmo de cambio y su ordenada en el origen; la división con resto y el módulo para trabajar con magnitudes circulares; las funciones periódicas; y la fórmula del meridiano a una hora dada.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**El reloj de sol adelanta y atrasa.** El **mediodía solar** es el momento en que el Sol cruza el meridiano. Si la Tierra girase en una órbita circular con el eje derecho, el mediodía solar caería todos los días a la misma hora del reloj. No es así: a lo largo del año se adelanta y se atrasa hasta un cuarto de hora. La diferencia entre la hora que marca un reloj de sol y la de un reloj que avanzase siempre al mismo ritmo se llama **ecuación del tiempo**. Tiene dos causas, y cada una es una función periódica (sesión 2).
+
+- **La órbita elíptica.** La Tierra va más deprisa cerca del perihelio, a principios de enero, y más despacio cerca del afelio, en julio (lo verás con la segunda ley de Kepler en la semana 14). Cuando va más deprisa, el Sol avanza más cada día respecto a las estrellas, y la Tierra tiene que girar un poco más para volver a tenerlo en el meridiano: el día solar se alarga. Este efecto tiene un periodo de **un año**.
+- **La inclinación del eje.** El Sol avanza sobre la eclíptica, que está inclinada 23,44° respecto al ecuador. Lo que cuenta para el reloj es cuánto avanza en ascensión recta, medida a lo largo del ecuador. Cerca de los equinoccios, el Sol cruza el ecuador en diagonal y parte de su avance es hacia el norte o el sur, así que avanza menos en ascensión recta; cerca de los solsticios avanza paralelo al ecuador y, además, los meridianos están más juntos allí, así que avanza más. Este efecto se repite **dos veces al año**.
+
+Una aproximación útil, con $N$ el número del día del año (1 el 1 de enero) y $B = 360^\circ\,(N - 81)/365$, es
+
+$$E \approx 9{,}87\,\sin 2B - 7{,}53\,\cos B - 1{,}5\,\sin B \quad \text{minutos}.$$
+
+El término con $2B$ es el de la inclinación, y los otros dos, el de la órbita. Cuando $E$ es positivo, el reloj de sol va **adelantado**. Los extremos son unos +16 minutos a principios de noviembre y unos −14 a mediados de febrero, y la ecuación se anula cuatro veces al año: hacia el 15 de abril, el 13 de junio, el 1 de septiembre y el 25 de diciembre.
+
+**A qué hora es el mediodía en tu reloj.** El reloj oficial no sigue al Sol de tu lugar, sino una hora fija para toda una zona. En la España peninsular es la de Europa central, UTC+1 en invierno y UTC+2 en verano. El Sol tarda 4 minutos en recorrer cada grado de longitud, así que, a una longitud $\lambda$ al oeste de Greenwich, el mediodía solar llega $4\lambda$ minutos después de las 12:00 UTC. En total:
+
+$$\text{mediodía solar (hora oficial)} = 12{:}00 + \text{desfase del huso} + 4\,\text{min} \cdot \lambda_\text{oeste} - E.$$
+
+Si dibujas la posición del Sol a la misma hora del reloj todos los días de un año, sale un ocho alargado llamado **analema**: la altura cambia con la declinación y la posición este-oeste, con la ecuación del tiempo.
+
+**Ejercicios**
+
+1. Calcula la ecuación del tiempo el 3 de noviembre ($N = 307$) y el 11 de febrero ($N = 42$).
+2. Madrid está a 3,7° al oeste de Greenwich. ¿A qué hora oficial es el mediodía solar el 3 de noviembre (horario de invierno)? ¿Y el 11 de febrero?
+3. ¿Por qué en verano el mediodía solar en la España peninsular cae hacia las dos de la tarde?
+
+<details>
+<summary>Soluciones</summary>
+
+1. 3 de noviembre: $B = 360^\circ \cdot 226/365 = 222{,}9^\circ$, y $E \approx 9{,}87 \cdot 0{,}997 - 7{,}53 \cdot (-0{,}733) - 1{,}5 \cdot (-0{,}681) \approx 9{,}84 + 5{,}52 + 1{,}02 \approx$ **+16,4 min**. 11 de febrero: $B = 360^\circ \cdot (-39)/365 = -38{,}5^\circ$, y $E \approx 9{,}87 \cdot (-0{,}974) - 7{,}53 \cdot 0{,}783 - 1{,}5 \cdot (-0{,}623) \approx -9{,}62 - 5{,}89 + 0{,}93 \approx$ **−14,6 min**.
+2. Por la longitud: $4 \cdot 3{,}7 \approx 15$ min. 3 de noviembre: $12{:}00 + 1\text{ h} + 15\text{ min} - 16\text{ min} \approx$ **12:59**. 11 de febrero: $12{:}00 + 1\text{ h} + 15\text{ min} + 15\text{ min} \approx$ **13:30**.
+3. En verano el huso es UTC+2: a las dos horas de adelanto se suman los minutos de la longitud y la ecuación del tiempo, que en julio es de unos −6 minutos. En Madrid, el mediodía solar cae hacia las **14:20**.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

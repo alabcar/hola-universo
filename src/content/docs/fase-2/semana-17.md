@@ -166,6 +166,33 @@ El cuaderno de la semana 17:
 - **La conexión.** De la gravitación de Newton sale la tercera ley de Kepler, con su constante: $T^2 = 4\pi^2 r^3/(GM)$.
 - **Las herramientas.** Despejar incógnitas deshaciendo operaciones en orden inverso, raíces en notación científica, comprobación por unidades y la energía potencial $-GMm/r$ con el criterio de energía total para órbitas ligadas y libres.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**La paradoja del satélite que frena.** Los satélites en órbitas bajas atraviesan restos muy tenues de atmósfera que los frenan. Lo esperable sería que fueran cada vez más despacio. Ocurre lo contrario: **aceleran**. La explicación está en cómo se reparte la energía en una órbita circular. Con $v^2 = GM/r$ (sesión 3):
+
+$$E_\text{c} = \tfrac{1}{2}mv^2 = \frac{GMm}{2r}, \qquad E_\text{p} = -\frac{GMm}{r} = -2E_\text{c}, \qquad E = E_\text{c} + E_\text{p} = -\frac{GMm}{2r} = -E_\text{c}.$$
+
+La energía total es negativa y vale exactamente **menos** la energía cinética. Cuando el rozamiento quita energía, $E$ se hace más negativa, así que $r$ disminuye y $E_\text{c} = -E$ **aumenta**. Por cada julio que se lleva el rozamiento, la energía potencial baja 2 julios y la cinética sube 1. El satélite desciende en espiral, cada vez más deprisa, hasta que el aire es lo bastante denso para frenarlo de verdad y se quema al entrar en la atmósfera. La Estación Espacial pierde así unos 2 km de altura al mes, de media, y hay que subirla de vez en cuando encendiendo motores.
+
+El mismo reparto, $E = -E_\text{c}$, vale de media para cualquier sistema unido por la gravedad: una nube de gas, una estrella, un cúmulo de galaxias. Es el **teorema del virial**, que verás en las semanas 35 y 43. Tiene una consecuencia extraña: una estrella que pierde energía radiando luz se contrae y se **calienta**.
+
+**Ejercicios**
+
+1. La Estación Espacial orbita a $r = 6771$ km del centro de la Tierra. Calcula su velocidad y su periodo con $GM = 3{,}986 \times 10^{14}\ \text{m}^3/\text{s}^2$. Repite para $r = 6761$ km, 10 km más abajo.
+2. ¿Cuánto cambia la energía total por cada kilogramo de la estación entre esas dos órbitas? Comprueba que la cinética aumenta lo mismo que disminuye la total.
+3. Una nave quiere alcanzar a otra que va 100 km por delante en la misma órbita circular. ¿Debe acelerar o frenar?
+
+<details>
+<summary>Soluciones</summary>
+
+1. A 6771 km: $v = \sqrt{GM/r} \approx$ **7672,6 m/s** y $T = 2\pi r/v \approx$ **92,41 min**. A 6761 km: $v \approx$ **7678,3 m/s** (5,7 m/s más) y $T \approx$ **92,21 min**.
+2. $E/m = -GM/(2r)$: $-2{,}9434 \times 10^7$ J/kg a 6771 km y $-2{,}9478 \times 10^7$ J/kg a 6761 km. La total baja unos **44 kJ/kg**, y la cinética, $v^2/2$, sube de $2{,}9434 \times 10^7$ a $2{,}9478 \times 10^7$ J/kg: los mismos 44 kJ/kg.
+3. Debe **frenar** un poco. Al frenar baja a una órbita más pequeña, con periodo más corto y más velocidad, y se acerca a la otra. Cuando la alcanza, acelera para volver a la órbita original. Si acelerase, subiría a una órbita más grande y más lenta, y se quedaría atrás.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

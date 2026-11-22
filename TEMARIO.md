@@ -1,6 +1,6 @@
 # Temario · 48 preguntas del cielo
 
-Borrador pendiente de aprobación. Cada fila es una semana: la pregunta y lo que se estudia para contestarla.
+Aprobado. Cada fila es una semana: la pregunta y lo que se estudia para contestarla.
 
 ## Fase 1 · Principios básicos de astronomía
 

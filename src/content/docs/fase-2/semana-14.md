@@ -179,6 +179,51 @@ El cuaderno de la semana 14:
 - **Las leyes.** Primera: los planetas recorren elipses con el Sol en un foco. Segunda: el radio Sol-planeta barre áreas iguales en tiempos iguales, así que el planeta va más deprisa en el perihelio que en el afelio.
 - **Las herramientas.** La elipse como suma constante de distancias, la relación $a^2 = b^2 + c^2$, la excentricidad $e = c/a$, las distancias $a(1 \pm e)$ y la ecuación vista desde el foco, $r = a(1-e^2)/(1 + e\cos\theta)$.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Dónde está un planeta en una fecha dada.** La segunda ley de Kepler dice que el planeta barre áreas iguales en tiempos iguales. Pero no dice directamente dónde está en una fecha concreta. Kepler resolvió ese problema con tres ángulos, todos medidos desde el perihelio:
+
+- La **anomalía media**, $M = 2\pi\,(t - t_\text{p})/T$, donde $t_\text{p}$ es el instante del paso por el perihelio y $T$ el periodo. Es el ángulo que tendría un planeta imaginario que diera la vuelta a ritmo constante. Crece de manera uniforme con el tiempo.
+- La **anomalía excéntrica**, $E$, un ángulo auxiliar. Dibuja la circunferencia de radio $a$ con el mismo centro que la elipse, y lleva el planeta en vertical, perpendicular al eje mayor, hasta esa circunferencia. $E$ es el ángulo de ese punto visto desde el **centro**.
+- La **anomalía verdadera**, $\nu$ (ni), el ángulo del planeta visto desde el **Sol**, que está en un foco.
+
+La segunda ley se traduce en la **ecuación de Kepler**:
+
+$$M = E - e\sin E.$$
+
+Sale de calcular el área barrida desde el perihelio: si estiras la elipse hasta convertirla en la circunferencia, esa área se convierte en un sector circular menos un triángulo, y el resultado es proporcional a $E - e\sin E$. Una vez conocido $E$, la distancia al Sol y la anomalía verdadera son
+
+$$r = a\,(1 - e\cos E), \qquad \tan\frac{\nu}{2} = \sqrt{\frac{1 + e}{1 - e}}\,\tan\frac{E}{2}.$$
+
+**Resolverla por iteración.** Dado $M$, no hay una fórmula que despeje $E$: es una **ecuación trascendente**. Pero se puede resolver por aproximaciones sucesivas: empieza con $E_0 = M$ y repite
+
+$$E_{k+1} = M + e\sin E_k.$$
+
+Para excentricidades pequeñas converge en dos o tres pasos. Para Marte ($e = 0{,}0934$) y $M = 60^\circ = 1{,}0472$ rad: $E_1 = 1{,}0472 + 0{,}0934 \sin 1{,}0472 = 1{,}1281$; $E_2 = 1{,}1316$; $E_3 = 1{,}1317$ rad, es decir, $E = 64{,}84^\circ$. Entonces $\nu \approx 69{,}8^\circ$ y $r \approx 0{,}960\,a$: Marte va casi $10^\circ$ por delante del planeta imaginario, porque acaba de pasar por el perihelio, donde se mueve más deprisa. Para excentricidades cercanas a 1, como las de los cometas, la iteración es lenta y se usa el **método de Newton**, que repite $E \leftarrow E - (E - e\sin E - M)/(1 - e\cos E)$.
+
+La ecuación de Kepler es la base para calcular efemérides, las tablas de posiciones de los astros. La usarás en la semana 24.
+
+:::note[De dónde viene la palabra]
+**Anomalía** viene del griego *anōmalía*, «irregularidad, desigualdad», de *an-*, «no», y *homalós*, «llano, uniforme». Los astrónomos antiguos llamaban así a las irregularidades del movimiento de los planetas, que no avanzaban a ritmo constante, y el nombre pasó a los ángulos con los que se describen. **Excéntrico** viene de *ex*, «fuera», y *kéntron*, «centro»: fuera del centro.
+:::
+
+**Ejercicios**
+
+1. Comprueba que, si $e = 0$, los tres ángulos son iguales. ¿Qué tipo de movimiento es?
+2. Resuelve la ecuación de Kepler para $e = 0{,}5$ y $M = 60^\circ$ con la iteración. ¿Cuántos pasos necesitas para tener cuatro decimales? Calcula $r/a$.
+3. El cometa Halley tiene $e = 0{,}967$, $a = 17{,}8$ ua y un periodo de 75,3 años. Seis años y tres meses después de pasar por el perihelio, $M = 30^\circ$, y la solución es $E \approx 85{,}2^\circ$. ¿A qué distancia del Sol está? ¿Qué fracción de su periodo ha pasado?
+
+<details>
+<summary>Soluciones</summary>
+
+1. Con $e = 0$: $M = E$, y $\tan(\nu/2) = \tan(E/2)$, así que $\nu = E$. Es un movimiento **circular uniforme**.
+2. $E_0 = 1{,}0472$; $E_1 = 1{,}4802$; $E_2 = 1{,}5452$; $E_3 = 1{,}5470$; $E_4 = 1{,}5471$ rad. Hacen falta unos **cuatro o cinco pasos**: $E \approx 88{,}64^\circ$. Entonces $r/a = 1 - 0{,}5\cos 88{,}64^\circ \approx$ **0,988**, y $\nu \approx 118{,}8^\circ$.
+3. $r = 17{,}8\,(1 - 0{,}967\cos 85{,}2^\circ) \approx 17{,}8 \cdot 0{,}919 \approx$ **16,4 ua**, más lejos que Saturno. Solo ha pasado **1/12** de su periodo, pero ya ha recorrido $\nu \approx 164^\circ$ de su órbita: el Halley pasa muy deprisa por el perihelio y casi toda su vida lejos del Sol.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.

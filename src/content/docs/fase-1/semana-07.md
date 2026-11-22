@@ -148,6 +148,35 @@ El cuaderno de la semana 7:
 - **La causa.** Un objeto visto desde dos lugares distintos aparece en direcciones diferentes, y el ángulo entre ellas, junto con la distancia entre los lugares, determina la distancia al objeto.
 - **Las herramientas.** El teorema de Pitágoras y una demostración; seno, coseno y tangente, y la relación $\sin^2\alpha + \cos^2\alpha = 1$; resolución de triángulos rectángulos; y el cálculo de cómo un error pequeño en un ángulo se amplifica en la distancia.
 
+## Para ir más lejos (opcional)
+
+Este apartado no hace falta para seguir con la semana siguiente. Es para volver a él cuando quieras profundizar.
+
+**Aristarco y la distancia al Sol.** Además del razonamiento del eclipse de la sesión 3, Aristarco de Samos propuso un método para saber cuántas veces está el Sol más lejos que la Luna. Cuando la Luna está exactamente en cuarto, con la mitad del disco iluminada, el Sol la ilumina de lado: el ángulo Tierra-Luna-Sol es **recto**. Tienes un triángulo rectángulo con la Tierra, la Luna y el Sol en los vértices. Si mides desde la Tierra el ángulo $\alpha$ entre la Luna y el Sol en ese momento, el coseno de la sesión 1 da
+
+$$\cos\alpha = \frac{d_\text{Luna}}{d_\text{Sol}} \quad\Longrightarrow\quad \frac{d_\text{Sol}}{d_\text{Luna}} = \frac{1}{\cos\alpha}.$$
+
+Aristarco estimó $\alpha = 87^\circ$ y concluyó que el Sol estaba unas **19 veces** más lejos que la Luna. El razonamiento es impecable. El valor real es de unas **390 veces**, que corresponde a $\alpha \approx 89{,}85^\circ$.
+
+**Un problema mal condicionado.** El fallo no fue de geometría, sino de medida, y enseña algo que sirve en toda la ciencia. Cerca de $90^\circ$, el coseno es casi cero y cambia muy deprisa en proporción a su valor, así que un error diminuto en el ángulo da un error enorme en el resultado. Con $89{,}80^\circ$ sale 286; con $89{,}90^\circ$, 573. Un problema así se llama **mal condicionado**: pequeños errores en los datos producen grandes errores en la respuesta. Además, el momento exacto del cuarto es muy difícil de fijar a simple vista: el terminador parece recto durante horas, y el relieve de la Luna lo hace irregular.
+
+Aun así, la conclusión de Aristarco fue revolucionaria. Como el Sol y la Luna se ven del mismo tamaño, si el Sol está 19 veces más lejos, también es 19 veces más grande que la Luna. Y con su estimación del eclipse (la Luna mide un tercio de la Tierra), el Sol tenía que ser unas seis veces más grande que la Tierra. Según cuenta Arquímedes, Aristarco propuso por eso que es la Tierra la que gira alrededor del Sol, y no al revés, dieciocho siglos antes que Copérnico.
+
+**Ejercicios**
+
+1. Calcula $1/\cos 87^\circ$ y $1/\cos 89{,}85^\circ$.
+2. La elongación de la Luna crece unos $12{,}19^\circ$ al día. Si el cuarto real ocurre cuando la elongación es de $89{,}85^\circ$ y no de $90^\circ$, ¿cuánto tiempo antes del momento de elongación $90^\circ$ ocurre? ¿Y con el ángulo de Aristarco, $87^\circ$?
+3. Con valores actuales, la Luna mide 0,27 veces la Tierra y el Sol está 389 veces más lejos que la Luna. ¿Cuántas veces mayor que la Tierra es el diámetro del Sol, si el Sol y la Luna se ven del mismo tamaño?
+
+<details>
+<summary>Soluciones</summary>
+
+1. $1/\cos 87^\circ = 1/0{,}0523 \approx$ **19,1**. $1/\cos 89{,}85^\circ = 1/0{,}00262 \approx$ **382**.
+2. $0{,}15^\circ/12{,}19^\circ$ por día $\approx 0{,}0123$ días, unos **18 minutos**. Con $87^\circ$: $3^\circ/12{,}19^\circ \approx 0{,}25$ días, unas **6 horas**. Aristarco necesitaba fijar el instante del cuarto con un error de pocos minutos, algo imposible a simple vista.
+3. $0{,}27 \cdot 389 \approx$ **105**. El valor real es 109; la diferencia viene de que el Sol se ve, de media, algo mayor que la Luna.
+
+</details>
+
 ## Recursos
 
 Los recursos marcados con **(sin verificar)** son enlaces que no he podido abrir desde mi entorno. Comprueba que funcionan antes de fiarte.
